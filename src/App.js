@@ -12,9 +12,15 @@ class App extends React.Component {
   }
   handleClick() {
     while(this.state.index < pokemons.length) {
-      this.setState((estadoAnterior, _props) => ({
-        index: estadoAnterior.index + 1
-      }))
+      if (this.state.index === pokemons.length - 1) {
+        this.setState((estadoAnterior, _props) => ({
+          index: 0
+        }))
+      } else {
+        this.setState((estadoAnterior, _props) => ({
+          index: estadoAnterior.index + 1
+        }))
+      }
     }
   }
   render() {
