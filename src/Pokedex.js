@@ -8,25 +8,24 @@ class Pokedex extends React.Component {
         this.state = {
           index: 0
         }
+        this.handleClick = this.handleClick.bind(this)
       }
       handleClick() {
-        while(this.state.index < pokemons.length) {
-          if (this.state.index === pokemons.length - 1) {
-            this.setState((estadoAnterior, _props) => ({
-              index: 0
+        if (this.state.index === pokemons.length - 1) {
+            this.setState({ index: 0 })
+        } else {
+            this.setState((estadoAnterior) => ({
+            index: estadoAnterior.index + 1
             }))
-          } else {
-            this.setState((estadoAnterior, _props) => ({
-              index: estadoAnterior.index + 1
-            }))
-          }
         }
       }
     render() {
         const { pokemon } = this.props
         return (
             <div className="pokedex">
-                <Pokemon key={pokemons[this.state.index].id} name={pokemons[this.state.index].name} type={pokemons[this.state.index].type} averageWeight={pokemons[this.state.index].averageWeight} image={pokemons[this.state.index].image} />
+                {pokemons.filter((pokemon, index) => index === this.state.index).map((pokemon) => {
+                        return <Pokemon key={this.props.pokemons[this.state.index].id} pokemon={this.props.pokemons[this.state.index]} />
+                })}                
                 <button onClick={this.handleClick}>Próximo Pokemon</button>
             </div>
         );
