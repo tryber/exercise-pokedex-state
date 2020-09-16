@@ -16,16 +16,14 @@ class Pokedex extends React.Component {
   }
 
   filterTypes(chosenType) {
-    chosenType === 'All'
-      ? this.setState(_prev => ({ currentPokeList: this.props.pokemons }))
-      : this.setState(_prev => ({
-        currentPokeList: this.props.pokemons.filter(function (poke) {
-          return poke.type === chosenType
-        }
-        )
-      })
-      )
+    const { pokemons } = this.props
     this.setState({ pokeIndex: 0 })
+    this.setState(() =>
+      (chosenType === 'All'
+        ? { currentPokeList: pokemons }
+        : { currentPokeList: pokemons.filter(poke => poke.type === chosenType) }
+      )
+    )
   }
 
   changePokemon() {
