@@ -5,26 +5,21 @@ class Pokedex extends React.Component {
   constructor(props) {
     super();
     this.changePokemon = this.changePokemon.bind(this)
-    this.getTypes = this.getTypes.bind(this)
+    this.filterTypes = this.filterTypes.bind(this)
     this.state = {
       pokeIndex: 0,
-      filteredPokes: props.pokemons.reduce((acc, current) => {
-      if (current.type in acc) {
-        console.log(current.type)
-        return acc.push(current.type)
-      }
-      //console.log(current.type)
-      //console.log(acc)
-      return acc
-      /* (current.type in acc ? acc.push(current.type) : acc), ['All']  */
-      }
-    , ['All'])
+      filteredPokes: props.pokemons.reduce((acc, current) =>
+        acc.includes(current.type) ? acc : acc.concat(current.type),
+        ['All'])
     }
   }
 
-  getTypes() {
-    this.props.pokemons.reduce((acc, current) =>
-      (this.type in acc ? acc.push(current.type) : acc), ['All']
+  filterTypes(chosenType) {
+    return this.props.pokemons.filter(poke => {
+      if (poke.type === chosenType) {
+        return poke
+      }
+    }
     )
   }
 
@@ -47,7 +42,7 @@ class Pokedex extends React.Component {
         <button onClick={this.changePokemon}>Next Pokemon</button>
         <div className="pokeType">
           {this.state.filteredPokes.map(pokeType =>
-            <button key="">{pokeType}</button>)}
+            <button key={pokeType}>{pokeType}</button>)}
         </div>
       </div>
     );
