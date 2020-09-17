@@ -25,11 +25,10 @@ class Pokedex extends React.Component {
   }
 
   changePokemon() {
-    this.state.pokeIndex < this.state.currentPokeList.length - 1
-      ? this.setState((previous, _props) => ({
-        pokeIndex: previous.pokeIndex + 1
-      }))
-      : this.setState({ pokeIndex: 0 })
+    this.setState(prev => this.state.pokeIndex < this.state.currentPokeList.length - 1
+      ? { pokeIndex: prev.pokeIndex + 1 }
+      : { pokeIndex: 0 }
+    )
   }
 
   render() {
