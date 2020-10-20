@@ -20,12 +20,10 @@ class Pokedex extends React.Component {
         }
       }
     render() {
-        const { pokemon } = this.props
         return (
             <div className="pokedex">
-                {pokemons.filter((pokemon, index) => index === this.state.index).map((pokemon) => {
-                        return <Pokemon key={this.props.pokemons[this.state.index].id} pokemon={this.props.pokemons[this.state.index]} />
-                })}                
+                <Pokemon key={this.props.pokemons[this.state.index].id} pokemon={this.props.pokemons[this.state.index]} />
+                     
                 <button onClick={this.handleClick}>Próximo Pokemon</button>
             </div>
         );
