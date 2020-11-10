@@ -1,0 +1,17 @@
+.pokedex {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px 10px;
+}
+
+.actionsPokedex {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+  justify-content: center;
+}
+
+.actionsPokedex button {
+  margin: 5px;
+  border-radius: 5px;
+}
