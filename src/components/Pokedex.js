@@ -1,5 +1,6 @@
 import React from "react";
 import Pokemon from "./Pokemon";
+import Button from "./Button";
 
 class Pokedex extends React.Component {
   constructor(props) {
@@ -39,6 +40,13 @@ class Pokedex extends React.Component {
       pokemonPosition: 0,
     }));
   };
+  allPokemonsType = () => {
+    const types = this.props.pokemons.map((pokemon) => pokemon.type);
+    const typesWithNoRepetition = types.filter(
+      (thisType, index) => types.indexOf(thisType) === index
+    );
+    return typesWithNoRepetition;
+  };
 
   render() {
     return (
@@ -48,9 +56,12 @@ class Pokedex extends React.Component {
             pokemon={this.state.arrayfiltered[this.state.pokemonPosition]}
           />
           <button onClick={this.reset}>All</button>
-          <button onClick={this.handlerClick}> me clica :o</button>
-          <button onClick={this.filterType}>Fire</button>
-          <button onClick={this.filterType}>Psychic</button>
+          <button onClick={this.handlerClick}> proximo pokemon</button>
+          {this.allPokemonsType().map((type) => (
+            <Button onClick={this.filterType} key={type}>
+              {type}
+            </Button>
+          ))}
         </div>
       </div>
     );
