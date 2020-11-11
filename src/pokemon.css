@@ -1,0 +1,65 @@
+.pokemon {
+    background-color: rgb(240, 240, 240);
+    border-color: darkgray;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    padding: 5px 15px;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.pokemon-info {
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.poison {
+    background-color: #C183C1;
+    color: #682A68;
+    border-color: #682A68;
+}
+
+.psychic {
+    background-color: #FA92B2;
+    color: #A13959;
+    border-color: #A13959;
+}
+
+.fire {
+    background-color: #F5AC78;
+    color: #9C531F;
+    border-color: #9C531F;
+}
+
+.normal {
+    background-color: #C6C6A7;
+    color: #6D6D4E;
+    border-color: #6D6D4E;
+
+}
+
+.dragon {
+    background-color: #A27DFA;
+    color: #4924A1;
+    border-color: #4924A1;
+}
+
+.bug {
+    background-color: #C6D16E;
+    color: #6D7815;
+    border-color: #6D7815;
+}
+
+.electric {
+    background-color: #FAE078;
+    color: #A1871F;
+    border-color: #A1871F;
+}
