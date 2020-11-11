@@ -19,8 +19,7 @@ class Pokedex extends React.Component {
                 counter: estadoAnterior.counter - 1
             }))
         }
-        }
-
+    }
 
     handleClickNext = () => {
         if (this.state.counter === 8) {
@@ -28,9 +27,9 @@ class Pokedex extends React.Component {
                 counter: 0
             }))
         } else {
-        this.setState((estadoAnterior, _props) => ({
-            counter: estadoAnterior.counter + 1
-          }))
+            this.setState((estadoAnterior, _props) => ({
+                counter: estadoAnterior.counter + 1
+            }))
         }
     }
 
