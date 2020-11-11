@@ -1,3 +1,27 @@
 .App {
   text-align: center;
 }
+button {
+  border: 1px solid #c7ba03;
+  padding: 10px;
+  background-color:#ffee00;
+  color:rgb(0, 0, 0);
+  margin:5px 6px;
+}
+
+button.next-poke:disabled,
+button.next-poke[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+button.next-poke{
+  border-color: #1c8a00;
+  background-color: #25b900;
+}
+div.pokedex{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}

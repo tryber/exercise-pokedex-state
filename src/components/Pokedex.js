@@ -1,6 +1,6 @@
 import React from "react";
 import Pokemon from "./Pokemon";
-import Button from "./Button";
+import TypeButton from "./Button";
 
 class Pokedex extends React.Component {
   constructor(props) {
@@ -23,7 +23,6 @@ class Pokedex extends React.Component {
       }));
     }
   }
-
   reset = () => {
     this.setState(() => ({
       arrayfiltered: this.props.pokemons,
@@ -31,7 +30,6 @@ class Pokedex extends React.Component {
     }));
   };
   filterType = (event) => {
-    console.log(event.target.innerText);
     let pokemonsType = this.props.pokemons.filter(
       (pokemon) => pokemon.type === event.target.innerText
     );
@@ -55,13 +53,23 @@ class Pokedex extends React.Component {
           <Pokemon
             pokemon={this.state.arrayfiltered[this.state.pokemonPosition]}
           />
+
           <button onClick={this.reset}>All</button>
-          <button onClick={this.handlerClick}> proximo pokemon</button>
+
           {this.allPokemonsType().map((type) => (
-            <Button onClick={this.filterType} key={type}>
+            <TypeButton onClick={this.filterType} key={type}>
               {type}
-            </Button>
+            </TypeButton>
           ))}
+        </div>
+        <div>
+          <button
+            className="next-poke"
+            onClick={this.handlerClick}
+            disabled={this.state.arrayfiltered.length === 1}
+          >
+            proximo pokemon
+          </button>
         </div>
       </div>
     );
