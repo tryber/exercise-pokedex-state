@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import pokemons from './data'
 import Pokedex from './Pokedex'
 import Pokemon from './Pokemon'
+import TypeButton from './TypeButton'
 class Botao extends Component {
     constructor() {
         super()
@@ -26,14 +27,11 @@ class Botao extends Component {
                     <Pokemon pokemon={pokemons[this.state.indice]} />
             }
             <div>
-                <button value='Poison' onClick={this.pokemonType}>Perigoso</button>
-                <button value='Fire' onClick={this.pokemonType}>Fogoso</button>
-                <button value='Electric' onClick={this.pokemonType}>Rato</button>
-                <button value='Normal' onClick={this.pokemonType}>Normal</button>
+                <TypeButton pokemonType={this.pokemonType} />
             </div>
             <div>
-                <button onClick={this.nextPokemon}>Próximo Pokemon</button>
-                <button onClick={this.allPokemons}>Todos os Pokemons</button>
+                <button onClick={this.nextPokemon} className='buttons'>Próximo Pokemon</button>
+                <button onClick={this.allPokemons} className='buttons'>Todos os Pokemons</button>
             </div>
         </div>
     )}

@@ -63,3 +63,12 @@
     color: #A1871F;
     border-color: #A1871F;
 }
+
+.button-type {
+    margin: 5px 3px;
+    padding: 1px 10px;
+}
+
+.buttons {
+    margin: 1px 3px;
+}
