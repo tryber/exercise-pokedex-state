@@ -27,7 +27,7 @@ class Botao extends Component {
                     <Pokemon pokemon={pokemons[this.state.indice]} />
             }
             <div>
-                <TypeButton pokemonType={this.pokemonType} />
+                <TypeButton pokemonType={this.pokemonType} pokemons={pokemons} />
             </div>
             <div>
                 <button onClick={this.nextPokemon} className='buttons'>Próximo Pokemon</button>

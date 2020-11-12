@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 class TypeButtons extends Component {
     render(){
-        const { pokemonType } = this.props;
-        const types = ['Dragon', 'Electric', 'Fire', 'Bug', 'Poison', 'Psychic', 'Normal']; //Preguiça de fazer um reduce no data para tirar os duplicados
+        const { pokemonType, pokemons } = this.props;
+        const types = pokemons.map(pokemon => pokemon.type)
+                              .reduce((unique, item) => unique.includes(item) ? unique:[...unique, item],[])
         return (
             <div>
                 {
