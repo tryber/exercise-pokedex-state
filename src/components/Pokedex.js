@@ -14,9 +14,7 @@ class Pokedex extends React.Component {
 
   handlerClick() {
     if (this.state.pokemonPosition >= this.state.arrayfiltered.length - 1) {
-      this.setState(() => ({
-        pokemonPosition: 0,
-      }));
+      this.setState({ pokemonPosition: 0 });
     } else {
       this.setState((estadoAnterior) => ({
         pokemonPosition: estadoAnterior.pokemonPosition + 1,
@@ -33,10 +31,10 @@ class Pokedex extends React.Component {
     let pokemonsType = this.props.pokemons.filter(
       (pokemon) => pokemon.type === event.target.innerText
     );
-    this.setState(() => ({
+    this.setState({
       arrayfiltered: pokemonsType,
       pokemonPosition: 0,
-    }));
+    });
   };
   allPokemonsType = () => {
     const types = this.props.pokemons.map((pokemon) => pokemon.type);
