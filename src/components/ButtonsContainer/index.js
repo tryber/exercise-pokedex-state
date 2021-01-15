@@ -24,6 +24,7 @@ class ButtonsContainer extends React.Component {
           <Button 
             key={type}
             callback={this.props.handleTypeChange}
+            className="type"
           >
             {type}
           </Button>

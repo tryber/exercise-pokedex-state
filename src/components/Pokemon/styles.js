@@ -23,6 +23,6 @@ export const Container = styled.div`
   div {
     background: rgba(255, 165, 0, 0.4);
     border-radius: 50%;
-    box-shadow: inset 4px 4px 8px grey;
+    box-shadow: inset 6px 6px 8px grey;
   }
 `;

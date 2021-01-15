@@ -63,10 +63,12 @@ class Pokedex extends React.Component {
                     <Button 
                         disabled={this.state.isNextButtonDisabled}
                         callback={this.handleNextPokemon}
+                        className="previous"
                     >Anterior</Button>
                     <Button 
                         disabled={this.state.isNextButtonDisabled}
                         callback={this.handleNextPokemon}
+                        className="next"
                     >Próximo</Button>
                 </Container>
                 <PokedexStyled>

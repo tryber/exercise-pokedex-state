@@ -12,6 +12,7 @@ class Button extends React.Component {
         <ButtonContainer 
           onClick={this.props.callback}
           disabled={this.props.disabled}
+          className={this.props.className}
         >
           {isLeft && <RiArrowLeftSFill />}
           {this.props.children}
