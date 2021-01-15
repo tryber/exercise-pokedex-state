@@ -4,7 +4,7 @@ import Pokemon from '../Pokemon';
 import Button from '../Button';
 import ButtonsContainer from '../ButtonsContainer';
 
-import './styles.css';
+import { Container, PokedexStyled, Header } from './styles';
 
 class Pokedex extends React.Component {
     constructor(props) {
@@ -53,19 +53,31 @@ class Pokedex extends React.Component {
         const pokemon = this.state.pokemonList[this.state.currentPokemon];
         
         return (
-            <>
-                <Button 
-                    disabled={this.state.isNextButtonDisabled}
-                    callback={this.handleNextPokemon}
-                >Próximo Pokemon</Button>
-                <div className="pokedex">
-                    {pokemon && <Pokemon key={pokemon.id} pokemon={pokemon} />}
+            <Container>
+                <Header>
+                    <h1> Pokedex </h1>
+                </Header>
+                <div className="buttons">
+                    <Button 
+                        disabled={this.state.isNextButtonDisabled}
+                        callback={this.handleNextPokemon}
+                    >Anterior</Button>
+                    <Button 
+                        disabled={this.state.isNextButtonDisabled}
+                        callback={this.handleNextPokemon}
+                    >Próximo</Button>
                 </div>
-                <ButtonsContainer
-                    pokemons={this.props.pokemons}
-                    handleTypeChange={this.handleTypeChange}
-                />
-            </>
+                <PokedexStyled>
+                    {pokemon && <Pokemon key={pokemon.id} pokemon={pokemon} />}
+                </PokedexStyled>
+                
+                <div className="buttons">
+                    <ButtonsContainer
+                        pokemons={this.props.pokemons}
+                        handleTypeChange={this.handleTypeChange}
+                    />
+                </div>
+            </Container>
         );
     }
 }

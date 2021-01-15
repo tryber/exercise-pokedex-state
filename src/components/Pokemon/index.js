@@ -1,20 +1,22 @@
 import React from 'react';
 
-import './styles.css';
+import { Container } from './styles';
 
 class Pokemon extends React.Component {
     render() {
         const { name, type, averageWeight, image } = this.props.pokemon;
 
         return (
-            <div className="pokemon">
-                <div>
+            <Container>
+                <section>
                     <p> {name} </p>
                     <p> {type} </p>
                     <p> {`Average weight: ${averageWeight.value} ${averageWeight.measurementUnit}`}</p>
+                </section>
+                <div>
+                    <img src={image} alt={`${name} sprite`} />
                 </div>
-                <img src={image} alt={`${name} sprite`} />
-            </div>
+            </Container>
         );
     }
 }
