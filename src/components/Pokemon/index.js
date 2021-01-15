@@ -9,9 +9,9 @@ class Pokemon extends React.Component {
         return (
             <Container>
                 <section>
-                    <p> {name} </p>
-                    <p> {type} </p>
-                    <p> {`Average weight: ${averageWeight.value} ${averageWeight.measurementUnit}`}</p>
+                    <p>Nome: {name} </p>
+                    <p>Tipo: {type} </p>
+                    <p> {`Peso médio: ${averageWeight.value} ${averageWeight.measurementUnit}`}</p>
                 </section>
                 <div>
                     <img src={image} alt={`${name} sprite`} />

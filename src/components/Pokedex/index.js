@@ -4,7 +4,7 @@ import Pokemon from '../Pokemon';
 import Button from '../Button';
 import ButtonsContainer from '../ButtonsContainer';
 
-import { PokedexStyled, Header } from './styles';
+import { PokedexStyled, Header, GameBoy } from './styles';
 import { Container } from '../ButtonsContainer/styles';
 
 
@@ -18,9 +18,20 @@ class Pokedex extends React.Component {
             isNextButtonDisabled: false,
         };
 
+        this.handlePreviousPokemon = this.handlePreviousPokemon.bind(this);
         this.handleNextPokemon = this.handleNextPokemon.bind(this);
         this.filterPokemonsByType = this.filterPokemonsByType.bind(this);
         this.handleTypeChange = this.handleTypeChange.bind(this);
+    }
+
+    handlePreviousPokemon() {
+        const { pokemonList } = this.state;
+
+        const previousPokemon = this.state.currentPokemon - 1;
+
+        this.setState({
+            currentPokemon: (previousPokemon < 0) ? (pokemonList.length - 1) : previousPokemon,
+        });
     }
 
     handleNextPokemon() {
@@ -59,28 +70,29 @@ class Pokedex extends React.Component {
                 <Header>
                     <h1> Pokedex </h1>
                 </Header>
-                <Container>
-                    <Button 
-                        disabled={this.state.isNextButtonDisabled}
-                        callback={this.handleNextPokemon}
-                        className="previous"
-                    >Anterior</Button>
-                    <Button 
-                        disabled={this.state.isNextButtonDisabled}
-                        callback={this.handleNextPokemon}
-                        className="next"
-                    >Próximo</Button>
-                </Container>
-                <PokedexStyled>
-                    {pokemon && <Pokemon key={pokemon.id} pokemon={pokemon} />}
-                </PokedexStyled>
-                
-                
-                <ButtonsContainer
-                    pokemons={this.props.pokemons}
-                    handleTypeChange={this.handleTypeChange}
-                />
-                
+                <GameBoy>
+                    <PokedexStyled>
+                        {pokemon && <Pokemon key={pokemon.id} pokemon={pokemon} />}
+                    </PokedexStyled>
+                    
+                    <ButtonsContainer
+                        pokemons={this.props.pokemons}
+                        handleTypeChange={this.handleTypeChange}
+                    />
+
+                    <Container>
+                        <Button 
+                            disabled={this.state.isNextButtonDisabled}
+                            callback={this.handlePreviousPokemon}
+                            className="previous"
+                        >Anterior</Button>
+                        <Button 
+                            disabled={this.state.isNextButtonDisabled}
+                            callback={this.handleNextPokemon}
+                            className="next"
+                        >Próximo</Button>
+                    </Container>
+                </GameBoy>
             </>
         );
     }

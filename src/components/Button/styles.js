@@ -2,11 +2,13 @@ import styled, { css } from 'styled-components';
 
 export const ButtonContainer = styled.button`
   align-items: center;
-  background: rgba(88, 129, 87, 0.8);
-  border: 2px solid rgb(179, 161, 37);
-  border-radius: 0 0 50% 50%;
-  box-shadow: 4px 4px 8px grey;
-  color: #e8c547;
+  background: rgb(42, 42, 46);
+  border: 2px solid rgb(18, 18, 20);
+  border-top: 0;
+  border-left: 0;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px black;
+  color: #FFF;
   display: flex;
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;

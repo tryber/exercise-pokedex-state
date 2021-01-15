@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   align-items: center;
-  background: rgba(255, 255, 255, 0.8);
+  background: #FFF;
   border: 1px gray solid;
   border-radius: 10px;
+  box-shadow: inset 1px 1px 6px black;
   display: flex;
   flex: 1 1 auto;
   height: 120px;
@@ -18,11 +19,10 @@ export const Container = styled.div`
     color: rgb(20, 20, 20);
     font-size: 16px;
     font-weight: 500;
+    text-align: start;
   }
 
-  div {
-    background: rgba(255, 165, 0, 0.4);
-    border-radius: 50%;
-    box-shadow: inset 6px 6px 8px grey;
+  img {
+    width: 120px;
   }
 `;

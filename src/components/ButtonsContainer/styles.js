@@ -5,4 +5,6 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
 `;
