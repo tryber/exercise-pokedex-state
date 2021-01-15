@@ -1,0 +1,33 @@
+.pokedex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+
+.bt {
+    background: rgb(255, 174, 0);
+    border: solid black 1px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    margin: 20px;
+    height: 50px;
+    width: 70px;
+}
+
+.bt-all {
+    background: rgb(247, 6, 6);
+}
+
+.bt-next {
+    background: green;
+    margin-top: 0;
+    width: 90px;
+}
+
+.pokemonCard {
+    display: flex;
+    margin:auto;
+    width: 35%;
+}
