@@ -19,7 +19,6 @@ class Pokedex extends React.Component {
     this.setState({
       pokemonAtual: newPoke < this.state.newPoke.length ? newPoke : 0,
     });
-    // console.log(this.state)
   }
 
   btnType(event) {
