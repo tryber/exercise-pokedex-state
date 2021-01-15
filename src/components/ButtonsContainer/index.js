@@ -2,6 +2,8 @@ import React from 'react';
 
 import Button from '../Button';
 
+import { Container } from './styles';
+
 class ButtonsContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -12,7 +14,7 @@ class ButtonsContainer extends React.Component {
   }
   render() {
     return (
-      <>
+      <Container>
         <Button
           callback={this.props.handleTypeChange}
         >
@@ -26,7 +28,7 @@ class ButtonsContainer extends React.Component {
             {type}
           </Button>
         ))}
-      </>
+      </Container>
     );
   }
 }

@@ -26,10 +26,6 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-  button:disabled {
-    cursor: not-allowed;
-  }
-
   .App {
     text-align: center;
   }

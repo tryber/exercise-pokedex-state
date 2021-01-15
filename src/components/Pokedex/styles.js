@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-    .buttons {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-`;
-
 export const Header = styled.div`
   align-items: center;
   background: rgba(204, 0, 0, 0.8);
