@@ -9,17 +9,24 @@ export const GameBoy = styled.div`
   box-shadow: inset 2px 2px 4px white;
   display: flex;
   flex-direction: column;
+  height: 530px;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 80px auto 0;
   padding: 30px 20px 20px 40px;
-  width: 80%;
+  width: 60%;
 
   @media (max-width: 768px) {
     border: 0;
     border-radius: 0;
     box-shadow: 0 0;
-    width: 100%;
     height: 100vh;
+    margin-top: 0px;
+    padding: 30px 0 0 0;
+    width: 100%;
+
+    p {
+      margin-left: 20px;
+    }
   }
 `;
 
@@ -44,5 +51,5 @@ export const PokedexStyled = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10px 10px;
+  margin: 10px;
 `;

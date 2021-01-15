@@ -23,7 +23,7 @@ export const ButtonContainer = styled.button`
   `}
 
   ${(props) => props.className === 'next' && css`
-  border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
   `}
 
   &:active {

@@ -15,7 +15,6 @@ export default createGlobalStyle`
     font-family: 'Press Start 2P', cursive;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100vh;
     margin: 0;
     -moz-osx-font-smoothing: grayscale;

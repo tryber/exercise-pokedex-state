@@ -15,11 +15,6 @@ class ButtonsContainer extends React.Component {
   render() {
     return (
       <Container>
-        <Button
-          callback={this.props.handleTypeChange}
-        >
-          All
-        </Button>
         {this.state.pokeTypes.map(type => (
           <Button 
             key={type}
