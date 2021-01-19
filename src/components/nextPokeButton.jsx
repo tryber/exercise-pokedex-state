@@ -6,10 +6,11 @@ class NextPokeButton extends React.Component {
   render() {
     return (
       <div>
-        <button>Próximo</button>
+        {/* <button>Próximo</button> */}
       </div>
     )
   }
 }
+
 
 export default NextPokeButton;
