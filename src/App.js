@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import pokemons from './data';
 import Pokedex from './components/Pokedex';
-import RenderButton from './components/button'
+import RenderButton from './components/button';
 
 function App() {
   return (
