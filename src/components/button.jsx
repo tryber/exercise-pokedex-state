@@ -4,7 +4,11 @@ import NextPokeButton from './nextPokeButton';
 class RenderButton extends React.Component {
   render() {
     return (
-      <NextPokeButton />
+      <>
+        <button></button>
+        <button></button>
+        <button></button>
+      </>
     )
   }
 }
