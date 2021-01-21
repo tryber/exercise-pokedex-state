@@ -15,6 +15,7 @@ class Pokedex extends React.Component {
     }
   }
 
+  // Funçoes de clique Next -------------------- //
   handleClick() {
     this.setState((estadoAnterior, _props) => ({
       cliques: estadoAnterior.cliques + 1
@@ -31,30 +32,19 @@ class Pokedex extends React.Component {
     }
   }
 
+  // ------------------------------------------ //
+
+  // funçoes seleçao e pokemons de fogo ------- //
   handleClickFire() {
-    // const firePoke = pokemons.map((poke, index) => poke.type === 'Fire'? index : 0)
-    // .filter((poke, index) => poke !== 0)
-    // const pokeArr = firePoke[this.state.cliqueFire]
-    //   this.setState((estadoAnterior, _props) => ({
-    //   cliqueFire: estadoAnterior.cliqueFire + 1
-    // }))
-    // if(this.state.cliqueFire === firePoke.length - 1) {
-    //   this.setState((estadoAnterior, _props) => ({
-    //     cliqueFire: estadoAnterior.cliqueFire = 0
-    //   }))
-    // }
     const pokeArr = this.cliqueFireCounter()
     this.setState((estadoAnterior, _props) => ({
       cliques: estadoAnterior.cliques = pokeArr
     }))
-
-    //console.log(firePoke.length - 1)
-    //console.log(pokeArr)
   }
 
   cliqueFireCounter() {
     const firePoke = pokemons.map((poke, index) => poke.type === 'Fire'? index : 0)
-    .filter((poke, index) => poke !== 0)
+    .filter((poke) => poke !== 0)
     const pokeArr = firePoke[this.state.cliqueFire]
       this.setState((estadoAnterior, _props) => ({
       cliqueFire: estadoAnterior.cliqueFire + 1
@@ -67,13 +57,23 @@ class Pokedex extends React.Component {
     return pokeArr
   }
 
+  // ------------------------------------------ //
+
+  // funçoes de pokemon eletrico
+  handleClickEletric() {
+    // script
+  }
+
+  handleEletricCounter() {
+    //script
+  }
+
   render() {
-    // console.log(this.handleClickFire())
-    // console.log(this)
+    const { cliques } = this.state;
     return (
       <div>
         <div className="pokedex">
-          {this.props.pokemons.map((pokemon, index) => index === this.state.cliques? <Pokemon key={pokemon.id} pokemon={pokemons[this.state.cliques]} />: '')}
+          {this.props.pokemons.map((pokemon, index) => index === cliques? <Pokemon key={pokemon.id} pokemon={pokemons[cliques]} />: '')}
         </div>
         <button onClick={this.handleClick} className='poke-button'>Next</button>
         <button onClick={this.handleClickFire}>Fire Pokemons</button>
