@@ -21,7 +21,7 @@ const pokemons = [
     type: 'Grass,	Poison',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 1,
       unit: "m"
     },
     averageWeight: {
@@ -37,7 +37,7 @@ const pokemons = [
     type: 'Grass,	Poison',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 2.0,
       unit: "m"
     },
     averageWeight: {
@@ -53,7 +53,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 0.6,
       unit: "m"
     },
     averageWeight: {
@@ -69,7 +69,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 1.1,
       unit: "m"
     },
     averageWeight: {
@@ -85,7 +85,7 @@ const pokemons = [
     type: 'Fire, Flying',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 1.7,
       unit: "m"
     },
     averageWeight: {
@@ -102,7 +102,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.5,
       unit: "m"
     },
     averageWeight: {
@@ -118,7 +118,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1,
       unit: "m"
     },
     averageWeight: {
@@ -134,7 +134,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.6,
       unit: "m"
     },
     averageWeight: {
@@ -150,7 +150,7 @@ const pokemons = [
     type: 'Bug',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -166,7 +166,7 @@ const pokemons = [
     type: 'Bug',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 0.7,
       unit: "m"
     },
     averageWeight: {
@@ -182,7 +182,7 @@ const pokemons = [
     type: 'Bug, Flying',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 1.1,
       unit: "m"
     },
     averageWeight: {
@@ -198,7 +198,7 @@ const pokemons = [
     type: 'Bug, Poison',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -213,7 +213,7 @@ const pokemons = [
     type: 'Bug Poison',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 0.6,
       unit: "m"
     },
     averageWeight: {
@@ -229,7 +229,7 @@ const pokemons = [
     type: 'Bug, Poison',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -245,7 +245,7 @@ const pokemons = [
     type: 'Normal, Flying',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -261,7 +261,7 @@ const pokemons = [
     type: 'Normal, Flying',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.1,
       unit: "m"
     },
     averageWeight: {
@@ -277,7 +277,7 @@ const pokemons = [
     type: 'Normal, Flying',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.5,
       unit: "m"
     },
     averageWeight: {
@@ -293,7 +293,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -309,7 +309,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.7,
       unit: "m"
     },
     averageWeight: {
@@ -325,7 +325,7 @@ const pokemons = [
     type: 'Normal, Flying',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -341,7 +341,7 @@ const pokemons = [
     type: 'Normal, Flying',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.2,
       unit: "m"
     },
     averageWeight: {
@@ -357,7 +357,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 2.0,
       unit: "m"
     },
     averageWeight: {
@@ -373,7 +373,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 3.5,
       unit: "m"
     },
     averageWeight: {
@@ -389,7 +389,7 @@ const pokemons = [
     type: 'Electric',
     color: 'rgb(242, 203, 85)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {
@@ -405,7 +405,7 @@ const pokemons = [
     type: 'Electric',
     color: 'rgb(242, 203, 85)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -421,7 +421,7 @@ const pokemons = [
     type: 'Ground',
     color: 'rgb(247, 133, 81)',
     averageHeight: {
-      height: 0,
+      height: 0.6,
       unit: "m"
     },
     averageWeight: {
@@ -437,7 +437,7 @@ const pokemons = [
     type: 'Ground',
     color: 'rgb(247, 133, 81)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -452,7 +452,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {
@@ -467,7 +467,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -482,7 +482,7 @@ const pokemons = [
     type: 'Poison Ground',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -497,7 +497,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 0.5,
       unit: "m"
     },
     averageWeight: {
@@ -512,7 +512,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 0.9,
       unit: "m"
     },
     averageWeight: {
@@ -527,7 +527,7 @@ const pokemons = [
     type: 'Poison Ground',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 1.4,
       unit: "m"
     },
     averageWeight: {
@@ -542,7 +542,7 @@ const pokemons = [
     type: 'Fairy',
     color: 'rgb(235, 168, 195)',
     averageHeight: {
-      height: 0,
+      height: 0.6,
       unit: "m"
     },
     averageWeight: {
@@ -557,7 +557,7 @@ const pokemons = [
     type: 'Fairy',
     color: 'rgb(235, 168, 195)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -572,7 +572,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 0.6,
       unit: "m"
     },
     averageWeight: {
@@ -587,7 +587,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 1.1,
       unit: "m"
     },
     averageWeight: {
@@ -602,7 +602,7 @@ const pokemons = [
     type: 'Normal Fairy',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.5,
       unit: "m"
     },
     averageWeight: {
@@ -617,7 +617,7 @@ const pokemons = [
     type: 'Normal Fairy',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -632,7 +632,7 @@ const pokemons = [
     type: 'Poison	Flying',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -647,7 +647,7 @@ const pokemons = [
     type: 'Poison	Flying',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 1.6,
       unit: "m"
     },
     averageWeight: {
@@ -662,7 +662,7 @@ const pokemons = [
     type: 'Grass Poison',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 0.5,
       unit: "m"
     },
     averageWeight: {
@@ -677,7 +677,7 @@ const pokemons = [
     type: 'Grass Poison',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -692,7 +692,7 @@ const pokemons = [
     type: 'Grass Poison',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 1.2,
       unit: "m"
     },
     averageWeight: {
@@ -707,7 +707,7 @@ const pokemons = [
     type: 'Bug Grass',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -722,7 +722,7 @@ const pokemons = [
     type: 'Bug Grass',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -737,7 +737,7 @@ const pokemons = [
     type: 'Bug Poison',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -752,7 +752,7 @@ const pokemons = [
     type: 'Bug Poison',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 1.5,
       unit: "m"
     },
     averageWeight: {
@@ -767,7 +767,7 @@ const pokemons = [
     type: 'Ground',
     color: 'rgb(247, 133, 81)',
     averageHeight: {
-      height: 0,
+      height: 0.2,
       unit: "m"
     },
     averageWeight: {
@@ -782,7 +782,7 @@ const pokemons = [
     type: 'Ground',
     color: 'rgb(247, 133, 81)',
     averageHeight: {
-      height: 0,
+      height: 0.7,
       unit: "m"
     },
     averageWeight: {
@@ -797,7 +797,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {
@@ -812,7 +812,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -827,7 +827,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -842,7 +842,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.7,
       unit: "m"
     },
     averageWeight: {
@@ -857,7 +857,7 @@ const pokemons = [
     type: 'Fighting',
     color: 'rgb(192, 48, 40)',
     averageHeight: {
-      height: 0,
+      height: 0.5,
       unit: "m"
     },
     averageWeight: {
@@ -872,7 +872,7 @@ const pokemons = [
     type: 'Fighting',
     color: 'rgb(192, 48, 40)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -887,7 +887,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 0.7,
       unit: "m"
     },
     averageWeight: {
@@ -902,7 +902,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 1.9,
       unit: "m"
     },
     averageWeight: {
@@ -917,7 +917,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.6,
       unit: "m"
     },
     averageWeight: {
@@ -932,7 +932,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -947,7 +947,7 @@ const pokemons = [
     type: 'Water Fithing',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -962,7 +962,7 @@ const pokemons = [
     type: 'Psychic',
     color: 'rgb(248, 88, 136)',
     averageHeight: {
-      height: 0,
+      height: 0.9,
       unit: "m"
     },
     averageWeight: {
@@ -977,7 +977,7 @@ const pokemons = [
     type: 'Psychic',
     color: 'rgb(248, 88, 136)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -992,7 +992,7 @@ const pokemons = [
     type: 'Psychic',
     color: 'rgb(248, 88, 136)',
     averageHeight: {
-      height: 0,
+      height: 1.5,
       unit: "m"
     },
     averageWeight: {
@@ -1007,7 +1007,7 @@ const pokemons = [
     type: 'Fighting',
     color: 'rgb(192, 48, 40)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -1022,7 +1022,7 @@ const pokemons = [
     type: 'Fighting',
     color: 'rgb(192, 48, 40)',
     averageHeight: {
-      height: 0,
+      height: 1.5,
       unit: "m"
     },
     averageWeight: {
@@ -1037,7 +1037,7 @@ const pokemons = [
     type: 'Fighting',
     color: 'rgb(192, 48, 40)',
     averageHeight: {
-      height: 0,
+      height: 1.6,
       unit: "m"
     },
     averageWeight: {
@@ -1052,7 +1052,7 @@ const pokemons = [
     type: 'Grass Poison',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 0.7,
       unit: "m"
     },
     averageWeight: {
@@ -1067,7 +1067,7 @@ const pokemons = [
     type: 'Grass Poison',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -1082,7 +1082,7 @@ const pokemons = [
     type: 'Grass Poison',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 1.7,
       unit: "m"
     },
     averageWeight: {
@@ -1097,7 +1097,7 @@ const pokemons = [
     type: 'Water Poison',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.9,
       unit: "m"
     },
     averageWeight: {
@@ -1112,7 +1112,7 @@ const pokemons = [
     type: 'Water Poison',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.6,
       unit: "m"
     },
     averageWeight: {
@@ -1127,7 +1127,7 @@ const pokemons = [
     type: 'Rock Ground',
     color: 'rgb(184, 160, 56)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {
@@ -1142,7 +1142,7 @@ const pokemons = [
     type: 'Rock Ground',
     color: 'rgb(184, 160, 56)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -1157,7 +1157,7 @@ const pokemons = [
     type: 'Rock Ground',
     color: 'rgb(184, 160, 56)',
     averageHeight: {
-      height: 0,
+      height: 1.4,
       unit: "m"
     },
     averageWeight: {
@@ -1172,7 +1172,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -1187,7 +1187,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 1.7,
       unit: "m"
     },
     averageWeight: {
@@ -1203,7 +1203,7 @@ const pokemons = [
     type: 'Water Psychic',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.2,
       unit: "m"
     },
     averageWeight: {
@@ -1218,7 +1218,7 @@ const pokemons = [
     type: 'Water Psychic',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.6,
       unit: "m"
     },
     averageWeight: {
@@ -1233,7 +1233,7 @@ const pokemons = [
     type: 'Electric Steel',
     color: 'rgb(242, 203, 85)',
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -1248,7 +1248,7 @@ const pokemons = [
     type: 'Electric Steel',
     color: 'rgb(242, 203, 85)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -1263,7 +1263,7 @@ const pokemons = [
     type: 'Normal Flying',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -1278,7 +1278,7 @@ const pokemons = [
     type: 'Normal Flying',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.4,
       unit: "m"
     },
     averageWeight: {
@@ -1293,7 +1293,7 @@ const pokemons = [
     type: 'Normal Flying',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.8,
       unit: "m"
     },
     averageWeight: {
@@ -1308,7 +1308,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.1,
       unit: "m"
     },
     averageWeight: {
@@ -1323,7 +1323,7 @@ const pokemons = [
     type: 'Water Ice',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.7,
       unit: "m"
     },
     averageWeight: {
@@ -1338,7 +1338,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 0.9,
       unit: "m"
     },
     averageWeight: {
@@ -1353,7 +1353,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 1.2,
       unit: "m"
     },
     averageWeight: {
@@ -1368,7 +1368,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -1383,7 +1383,7 @@ const pokemons = [
     type: 'Water Ice',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.5,
       unit: "m"
     },
     averageWeight: {
@@ -1398,7 +1398,7 @@ const pokemons = [
     type: 'Ghost Poison',
     color: 'rgb(112, 88, 152)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -1413,7 +1413,7 @@ const pokemons = [
     type: 'Ghost Poison',
     color: 'rgb(112, 88, 152)',
     averageHeight: {
-      height: 0,
+      height: 1.6,
       unit: "m"
     },
     averageWeight: {
@@ -1428,7 +1428,7 @@ const pokemons = [
     type: 'Ghost Poison',
     color: 'rgb(112, 88, 152)',
     averageHeight: {
-      height: 0,
+      height: 1.5,
       unit: "m"
     },
     averageWeight: {
@@ -1443,7 +1443,7 @@ const pokemons = [
     type: 'Rock Ground',
     color: 'rgb(184, 160, 56)',
     averageHeight: {
-      height: 0,
+      height: 8.8,
       unit: "m"
     },
     averageWeight: {
@@ -1458,7 +1458,7 @@ const pokemons = [
     type: 'Psychic',
     color: 'rgb(248, 88, 136)',
     averageHeight: {
-      height: 0,
+      height: 1,
       unit: "m"
     },
     averageWeight: {
@@ -1473,7 +1473,7 @@ const pokemons = [
     type: 'Psychic',
     color: 'rgb(248, 88, 136)',
     averageHeight: {
-      height: 0,
+      height: 1.6,
       unit: "m"
     },
     averageWeight: {
@@ -1488,7 +1488,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {
@@ -1503,7 +1503,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -1518,7 +1518,7 @@ const pokemons = [
     type: 'Electric',
     color: 'rgb(242, 203, 85)',
     averageHeight: {
-      height: 0,
+      height: 0.5,
       unit: "m"
     },
     averageWeight: {
@@ -1533,7 +1533,7 @@ const pokemons = [
     type: 'Electric',
     color: 'rgb(242, 203, 85)',
     averageHeight: {
-      height: 0,
+      height: 1.2,
       unit: "m"
     },
     averageWeight: {
@@ -1548,7 +1548,7 @@ const pokemons = [
     type: 'Grass Psychic',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {
@@ -1563,7 +1563,7 @@ const pokemons = [
     type: 'Grass Psychic',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 2.0,
       unit: "m"
     },
     averageWeight: {
@@ -1578,7 +1578,7 @@ const pokemons = [
     type: 'Ground',
     color: 'rgb(247, 133, 81)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {
@@ -1593,7 +1593,7 @@ const pokemons = [
     type: 'Ground',
     color: 'rgb(247, 133, 81)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -1608,7 +1608,7 @@ const pokemons = [
     type: 'Fighting',
     color: 'rgb(192, 48, 40)',
     averageHeight: {
-      height: 0,
+      height: 1.5,
       unit: "m"
     },
     averageWeight: {
@@ -1623,7 +1623,7 @@ const pokemons = [
     type: 'Fighting',
     color: 'rgb(192, 48, 40)',
     averageHeight: {
-      height: 0,
+      height: 1.4,
       unit: "m"
     },
     averageWeight: {
@@ -1638,7 +1638,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.2,
       unit: "m"
     },
     averageWeight: {
@@ -1653,7 +1653,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 0.6,
       unit: "m"
     },
     averageWeight: {
@@ -1668,7 +1668,7 @@ const pokemons = [
     type: 'Poison',
     color: 'rgb(159, 110, 151)',
     averageHeight: {
-      height: 0,
+      height: 1.2,
       unit: "m"
     },
     averageWeight: {
@@ -1683,7 +1683,7 @@ const pokemons = [
     type: 'Ground Rock',
     color: 'rgb(247, 133, 81)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -1698,7 +1698,7 @@ const pokemons = [
     type: 'Ground Rock',
     color: 'rgb(247, 133, 81)',
     averageHeight: {
-      height: 0,
+      height: 1.9,
       unit: "m"
     },
     averageWeight: {
@@ -1713,7 +1713,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.1,
       unit: "m"
     },
     averageWeight: {
@@ -1728,7 +1728,7 @@ const pokemons = [
     type: 'Grass',
     color: 'rgb(139, 190, 138)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -1743,7 +1743,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 2.2,
       unit: "m"
     },
     averageWeight: {
@@ -1758,7 +1758,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {
@@ -1773,7 +1773,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.2,
       unit: "m"
     },
     averageWeight: {
@@ -1788,7 +1788,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.6,
       unit: "m"
     },
     averageWeight: {
@@ -1803,7 +1803,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -1818,7 +1818,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -1833,7 +1833,7 @@ const pokemons = [
     type: 'Water Psychic',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.1,
       unit: "m"
     },
     averageWeight: {
@@ -1848,7 +1848,7 @@ const pokemons = [
     type: 'Psychic Fairy',
     color: 'rgb(248, 88, 136)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -1863,7 +1863,7 @@ const pokemons = [
     type: 'Bug Flying',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 1.5,
       unit: "m"
     },
     averageWeight: {
@@ -1878,7 +1878,7 @@ const pokemons = [
     type: 'Ice Psychic',
     color: 'rgb(152, 216, 216)',
     averageHeight: {
-      height: 0,
+      height: 1.4,
       unit: "m"
     },
     averageWeight: {
@@ -1893,7 +1893,7 @@ const pokemons = [
     type: 'Electric',
     color: 'rgb(242, 203, 85)',
     averageHeight: {
-      height: 0,
+      height: 1.1,
       unit: "m"
     },
     averageWeight: {
@@ -1908,7 +1908,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -1923,7 +1923,7 @@ const pokemons = [
     type: 'Bug',
     color: "rgb(139, 214, 116)",
     averageHeight: {
-      height: 0,
+      height: 1.5,
       unit: "m"
     },
     averageWeight: {
@@ -1938,7 +1938,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 1.4,
       unit: "m"
     },
     averageWeight: {
@@ -1953,7 +1953,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 0.9,
       unit: "m"
     },
     averageWeight: {
@@ -1968,7 +1968,7 @@ const pokemons = [
     type: 'Water Flying',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 6.5,
       unit: "m"
     },
     averageWeight: {
@@ -1983,7 +1983,7 @@ const pokemons = [
     type: 'Water Ice',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 2.5,
       unit: "m"
     },
     averageWeight: {
@@ -1998,7 +1998,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -2013,7 +2013,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.3,
       unit: "m"
     },
     averageWeight: {
@@ -2028,7 +2028,7 @@ const pokemons = [
     type: 'Water',
     color: 'rgb(88, 171, 246)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -2043,7 +2043,7 @@ const pokemons = [
     type: 'Electric',
     color: 'rgb(242, 203, 85)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -2058,7 +2058,7 @@ const pokemons = [
     type: 'Fire',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 0.9,
       unit: "m"
     },
     averageWeight: {
@@ -2073,7 +2073,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 0.8,
       unit: "m"
     },
     averageWeight: {
@@ -2088,7 +2088,7 @@ const pokemons = [
     type: 'Rock Water',
     color: 'rgb(184, 160, 56)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {
@@ -2103,7 +2103,7 @@ const pokemons = [
     type: 'Rock Water',
     color: 'rgb(184, 160, 56)',
     averageHeight: {
-      height: 0,
+      height: 1.0,
       unit: "m"
     },
     averageWeight: {
@@ -2118,7 +2118,7 @@ const pokemons = [
     type: 'Rock Water',
     color: 'rgb(184, 160, 56)',
     averageHeight: {
-      height: 0,
+      height: 0.5,
       unit: "m"
     },
     averageWeight: {
@@ -2133,7 +2133,7 @@ const pokemons = [
     type: 'Rock Water',
     color: 'rgb(184, 160, 56)',
     averageHeight: {
-      height: 0,
+      height: 1.3,
       unit: "m"
     },
     averageWeight: {
@@ -2148,7 +2148,7 @@ const pokemons = [
     type: 'Rock Flying',
     color: 'rgb(184, 160, 56)',
     averageHeight: {
-      height: 0,
+      height: 1.8,
       unit: "m"
     },
     averageWeight: {
@@ -2163,7 +2163,7 @@ const pokemons = [
     type: 'Normal',
     color: 'rgb(181, 185, 196)',
     averageHeight: {
-      height: 0,
+      height: 2.1,
       unit: "m"
     },
     averageWeight: {
@@ -2179,7 +2179,7 @@ const pokemons = [
     type: 'Ice Flying',
     color: 'rgb(152, 216, 216)',
     averageHeight: {
-      height: 0,
+      height: 1.7,
       unit: "m"
     },
     averageWeight: {
@@ -2194,7 +2194,7 @@ const pokemons = [
     type: 'Electric Flying',
     color: 'rgb(242, 203, 85)',
     averageHeight: {
-      height: 0,
+      height: 1.6,
       unit: "m"
     },
     averageWeight: {
@@ -2209,7 +2209,7 @@ const pokemons = [
     type: 'Fire flying',
     color: 'rgb(255, 167, 86)',
     averageHeight: {
-      height: 0,
+      height: 2.0,
       unit: "m"
     },
     averageWeight: {
@@ -2224,7 +2224,7 @@ const pokemons = [
     type: 'Dragon',
     color: 'rgb(112, 56, 248)',
     averageHeight: {
-      height: 0,
+      height: 1.8,
       unit: "m"
     },
     averageWeight: {
@@ -2239,7 +2239,7 @@ const pokemons = [
     type: 'Dragon',
     color: 'rgb(112, 56, 248)',
     averageHeight: {
-      height: 0,
+      height: 4.0,
       unit: "m"
     },
     averageWeight: {
@@ -2255,7 +2255,7 @@ const pokemons = [
     type: 'Dragon Flying',
     color: 'rgb(112, 56, 248)',
     averageHeight: {
-      height: 0,
+      height: 2.2,
       unit: "m"
     },
     averageWeight: {
@@ -2270,7 +2270,7 @@ const pokemons = [
     type: 'Psychic',
     color: 'rgb(248, 88, 136)',
     averageHeight: {
-      height: 0,
+      height: 2.0,
       unit: "m"
     },
     averageWeight: {
@@ -2285,7 +2285,7 @@ const pokemons = [
     type: 'Psychic',
     color: 'rgb(248, 88, 136)',
     averageHeight: {
-      height: 0,
+      height: 0.4,
       unit: "m"
     },
     averageWeight: {

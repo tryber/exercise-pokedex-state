@@ -3,13 +3,17 @@ import './poke.css'
 
 class Pokemon extends Component {
   render() {
-    const { value, measurementUnit } = this.props.pokemons.averageWeight
+    const { pokemons } = this.props;
+    const { id, name, type, color, averageHeight, averageWeight }  = pokemons
+    const { height, unit } = averageHeight
+    const { value, measurementUnit } = averageWeight
     return (
-      <li style={{backgroundColor: this.props.pokemons.color}} className='pokediv'>
+      <li style={{backgroundColor: color}} className='pokediv'>
         <div className='pokeInfo'>
-          <p>No.{this.props.pokemons.id} {this.props.pokemons.name}</p> 
-          <p>Type: {this.props.pokemons.type}</p>
-          <p>Average Weight: {value} {measurementUnit}</p>
+          <p>No.{ id } { name }</p> 
+          <p>Type: { type }</p>
+          <p>Average Height: { height } { unit }</p>
+          <p>Average Weight: { value } { measurementUnit }</p>
         </div>
         <img src={this.props.pokemons.image} ></img>
       </li>

@@ -1,0 +1,50 @@
+.aloneDiv {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  color: black;
+  display: flex;
+  font-weight: bolder;
+  flex-grow: 1;
+  height: 300px;
+  justify-content: center;
+  list-style-type: none;
+  margin: 1rem;
+  padding: 10px;
+  max-width: 800px;
+}
+
+.divImg svg {
+  color:cornsilk;
+}
+
+.divImg {
+  align-items: center;
+  background-image: url(./pokeball.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  align-items: flex-start;
+  display: flex;
+  font-family: cursive;
+  font-size: 25px;
+  font-style: oblique;
+  font-weight: 900;
+  flex-direction: column;
+  flex-grow: 1;
+  line-height: 0.5;
+  padding: 10px;
+  align-content:center;
+}
+
+.aloneDiv img {
+  height: 250px;
+  width: 200px;
+}
