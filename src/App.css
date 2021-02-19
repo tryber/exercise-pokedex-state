@@ -1,6 +1,6 @@
 body {
   background-color: rgb(49, 49, 49);
-  background-image: linear-gradient(to right, rgb(197, 229, 236), rgb(239, 187, 230));
+  background-image: linear-gradient(to right, rgb(0, 23, 251), rgb(255, 1, 1));
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
   margin: auto;
@@ -9,10 +9,10 @@ body {
 }
 
 header {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   display: flex;
   font-style: oblique;
-  font-size: 25px;
+  font-size: 30px;
   justify-content: center;
 }
 
