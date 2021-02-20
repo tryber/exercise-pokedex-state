@@ -23,3 +23,11 @@ body {
   flex-wrap: wrap;
   margin: 10px 10px;
 }
+
+.button {
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  margin: 10px;
+}
