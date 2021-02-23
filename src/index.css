@@ -21,10 +21,29 @@ body {
   margin: 7px;
 }
 
+.typeBox {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 5px;
+  width: 440px;
+}
+
+.All {
+  align-self: center;
+  background-color: white;
+  border-radius: 50px;
+  margin: 5px;
+  width: 100px;
+}
+
 .Bug {
   align-self: center;
   background-color: #a8b820;
   border-radius: 50px;
+  margin: 5px;
   width: 100px;
 }
 
@@ -32,6 +51,7 @@ body {
   align-self: center;
   background-color: #f8d030;
   border-radius: 50px;
+  margin: 5px;
   width: 100px;
 }
 
@@ -40,6 +60,7 @@ body {
   background-color: #7038f8;
   border-radius: 50px;
   color: white;
+  margin: 5px;
   width: 100px;
 }
 
@@ -47,6 +68,7 @@ body {
   align-self: center;
   background-color: #f08030;
   border-radius: 50px;
+  margin: 5px;
   width: 100px;
 }
 
@@ -54,6 +76,7 @@ body {
   align-self: center;
   background-color: #a8a878;
   border-radius: 50px;
+  margin: 5px;
   width: 100px;
 }
 
@@ -62,6 +85,7 @@ body {
   background-color: #a040a0;
   border-radius: 50px;
   color: white;
+  margin: 5px;
   width: 100px;
 }
 
@@ -69,5 +93,6 @@ body {
   align-self: center;
   background-color: #f85888;
   border-radius: 50px;
+  margin: 5px;
   width: 100px;
 }
