@@ -27,11 +27,17 @@ class Pokedex extends React.Component {
 
   render() {
     const { pokemonList, index} = this.state;
+    const typeList = ['All', 'Bug', 'Dragon', 'Electric', 'Fire', 'Normal', 'Poison', 'Psychic'];
     return (
-      <div className="pokedex">
-        <button onClick={this.downIndex}>Prev</button>
-        { <Pokemon key={pokemonList[index].id} pokemon={pokemonList[index]} /> }
-        <button onClick={this.upIndex}>Next</button>
+      <div>
+        <div className="pokedex">
+          <button onClick={this.downIndex}>Prev</button>
+          { <Pokemon key={pokemonList[index].id} pokemon={pokemonList[index]} /> }
+          <button onClick={this.upIndex}>Next</button>
+        </div>
+        <div className="types">
+          {typeList.map(type => <button>{type}</button>)}
+        </div>
       </div>
     );
   }
