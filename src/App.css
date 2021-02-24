@@ -31,8 +31,9 @@
 .pokedex {
   align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .pokedex section:hover {

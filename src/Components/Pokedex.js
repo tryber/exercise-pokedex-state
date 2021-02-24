@@ -11,7 +11,6 @@ class Pokedex extends React.Component {
       pokeList: this.props.pokemons.map(pokemon => pokemon),
     };
   }
-
   upIndex() {
     const { index, pokeList } = this.state;
     if (index === pokeList.length - 1) {
@@ -24,6 +23,19 @@ class Pokedex extends React.Component {
     if (index === 0) {
       this.setState(() => ({ index: pokeList.length - 1 }))
     } else this.setState((prev) => ({ index: prev.index - 1 }))
+  }
+  buttons() {
+    const { pokeList } = this.state;
+
+    if (pokeList.length > 1){
+      return (
+        <div>
+          <button onClick={this.downIndex}>Prev</button>
+          <button onClick={this.upIndex}>Next</button>
+        </div>
+      )
+    }
+    
   }
 
   setType(btnType) {
@@ -40,13 +52,9 @@ class Pokedex extends React.Component {
     return (
       <div>
         <div className="pokedex">
-          <button onClick={this.downIndex}>Prev</button>
-
           {<Pokemon key={pokeList[index].id} pokemon={pokeList[index]} />}
-
-          <button onClick={this.upIndex}>Next</button>
+          {this.buttons()}
         </div>
-
         <div className="typeBox">
           {typeList.map(type => <button key={type} className={type}
             onClick={this.setType.bind(this, type)}>{type}</button>)}
