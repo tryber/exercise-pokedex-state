@@ -1,4 +1,4 @@
-Esse é um projeto para o conteúdo de `Componentes com estado`.
+Esse é um projeto para o conteúdo de `Componentes com estado`!
 
 ### Antes de iniciar
 
