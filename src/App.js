@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
+import Pokedex from './components/Pokedex';
 import pokemons from './data';
-import Pokedex from './Pokedex';
 
 function App() {
   return (
