@@ -26,7 +26,6 @@ class Pokedex extends React.Component {
   }
   buttons() {
     const { pokeList } = this.state;
-
     if (pokeList.length > 1){
       return (
         <div>
@@ -35,7 +34,6 @@ class Pokedex extends React.Component {
         </div>
       )
     }
-    
   }
 
   setType(btnType) {
