@@ -31,7 +31,9 @@ class Pokedex extends React.Component {
     const { pokemons } = this.props;
     const { value } = event.target;
     await this.setState(() => ({
-      pokemons: (value !== "All" ? pokemons.filter((pokemons) => pokemons.type === value) : pokemons)
+      pokemonIndex: 0,
+      pokemons: (value !== "All" ? pokemons
+      .filter((pokemons) => pokemons.type === value ) : pokemons)
     }));
   }
 
@@ -53,7 +55,7 @@ class Pokedex extends React.Component {
           <button value="Electric" onClick={this.typePokemons}>Electric</button>
         </div>
         <div className="buttons">
-          <button onClick={this.nextPokemon}>Next Pokemon</button>
+          <button onClick={this.nextPokemon} disabled={ pokemons.length <= 1 }>Next Pokemon</button>
         </div>
       </div>
   );
