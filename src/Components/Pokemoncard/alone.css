@@ -21,7 +21,7 @@
 
 .divImg {
   align-items: center;
-  background-image: url(./pokeball.svg);
+  background-image: url(../../svg/pokeball.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

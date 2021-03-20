@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import data from './data'
-import Pokemon from './Pokemon'
-import PokemonAlone from './PokemomAlone';
+import data from '../../data'
+import Pokemon from '../pokemonCardList/Pokemon'
+import PokemonAlone from '../Pokemoncard/PokemomAlone';
 import { FaArrowRight } from 'react-icons/fa'
 import { FaArrowLeft } from 'react-icons/fa'
 
@@ -93,7 +93,7 @@ class Pokedex extends Component {
           <button className="btn btn-previous" onClick={ this.previousPokemon }><FaArrowLeft /></button>
           <ul className="pokeSecOne">
             {data
-            .filter((pokemon) => pokemon.type.includes(filtro) || pokemon.name.includes(filtro) )
+            .filter(({ name, type}) => type.includes(filtro) || name.includes(filtro) )
             .map((pokemon) => <PokemonAlone pokemons={ pokemon } key={ pokemon.id } />)[numPokemon]}
           </ul>
         <button className="btn btn-next" onClick={ this.nextPokemon }><FaArrowRight /></button>
