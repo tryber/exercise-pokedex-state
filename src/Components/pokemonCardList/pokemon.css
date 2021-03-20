@@ -1,0 +1,16 @@
+.pokediv {
+  background-color: white;
+  border: 5px solid gold;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 10px;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.pokeInfo {
+  width: 180px;
+}
