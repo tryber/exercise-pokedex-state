@@ -1,7 +1,8 @@
 .pokediv {
   background-color: white;
-  box-shadow: 5px 5px 10px black;
+  border: 5px solid gold;
   border-radius: 15px;
+  box-shadow: 5px 5px 10px black;
   display: flex;
   flex-grow: 1;
   justify-content: center;

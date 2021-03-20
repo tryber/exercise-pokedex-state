@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import pokemons from './data'
-import Pokemon from './Pokemon'
-import PokemonAlone from './PokemomAlone';
+import data from '../../data'
+import Pokemon from '../pokemonCardList/Pokemon'
+import PokemonAlone from '../Pokemoncard/PokemomAlone';
 import { FaArrowRight } from 'react-icons/fa'
 import { FaArrowLeft } from 'react-icons/fa'
 
@@ -13,8 +13,9 @@ class Pokedex extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.type = this.type.bind(this);
     this.state = {
+      teste: data,
       filtro: '',
-      arrayPosition: 0
+      numPokemon: 0
     }
   }
   
@@ -27,40 +28,40 @@ class Pokedex extends Component {
         word[0] = value.toUpperCase();
       }
     });
-    const last = word.join('');
-    console.log(last)
-    this.setState({ filtro: last })
+    const name = word.join('');
+    this.setState({ filtro: name })
   }
 
   type(param) {
     this.setState({ filtro: param })
-    this.setState({ arrayPosition: 0 })
+    this.setState({ numPokemon: 0 })
   }
 
   previousPokemon() {
-    const max = pokemons.filter((pokemon) => pokemon.type.includes(this.state.filtro) || pokemon.name.includes(this.state.filtro)).length
-    if (this.state.arrayPosition === 0) {
-      this.setState({ arrayPosition: (max - 1) })
+    const max = data.filter((pokemon) => pokemon.type.includes(this.state.filtro) || pokemon.name.includes(this.state.filtro)).length
+    if (this.state.numPokemon === 0) {
+      this.setState({ numPokemon: (max - 1) })
     } else {
       this.setState((estado, _props) => ({
-        arrayPosition: estado.arrayPosition - 1
+        numPokemon: estado.numPokemon - 1
       }))
     }
   }
 
   nextPokemon() {
-    const max = pokemons.filter((pokemon) => pokemon.type.includes(this.state.filtro) || pokemon.name.includes(this.state.filtro)).length
-    if (this.state.arrayPosition === (max - 1)) {
-      this.setState({ arrayPosition: 0 })
+    const max = data.filter((pokemon) => pokemon.type.includes(this.state.filtro) || pokemon.name.includes(this.state.filtro)).length
+    if (this.state.numPokemon === (max - 1)) {
+      this.setState({ numPokemon: 0 })
     } else {
       this.setState((estado, _props) => ({
-        arrayPosition: estado.arrayPosition + 1
+        numPokemon: estado.numPokemon + 1
       }))
     }
   }
 
   render() {
-    const { filtro, arrayPosition } = this.state
+    const { filtro, numPokemon } = this.state
+   
     return (
       <div className="App">
         <header>
@@ -68,7 +69,10 @@ class Pokedex extends Component {
         </header>
         <input type="text" placeholder='digite o pokemon' onChange={this.handleChange}/>
         <div className="buttonList">
-          <button style={{ backgroundColor: 'rgb(139, 190, 138)' }} className="btn-type" onClick={() => this.type('Grass')}>Grass</button>
+          <button 
+            style={{ backgroundColor: 'rgb(139, 190, 138)' }} 
+            className="btn-type" 
+            onClick={() => this.type('Grass')}>Grass</button>
           <button style={{ backgroundColor: 'rgb(255, 167, 86)' }} className="btn-type" onClick={() => this.type('Fire')}>Fire</button>
           <button style={{ backgroundColor: 'rgb(88, 171, 246)' }} className="btn-type" onClick={() => this.type('Water')}>Water</button>
           <button style={{ backgroundColor: 'rgb(139, 214, 116)' }} className="btn-type" onClick={() => this.type('Bug')}>Bug</button>
@@ -88,14 +92,14 @@ class Pokedex extends Component {
         <div className="destaque">
           <button className="btn btn-previous" onClick={ this.previousPokemon }><FaArrowLeft /></button>
           <ul className="pokeSecOne">
-            {pokemons
-            .filter((pokemon) => pokemon.type.includes(filtro) || pokemon.name.includes(filtro) )
-            .map((pokemon) => <PokemonAlone pokemons={ pokemon } key={ pokemon.id } />)[arrayPosition]}
+            {data
+            .filter(({ name, type}) => type.includes(filtro) || name.includes(filtro) )
+            .map((pokemon) => <PokemonAlone pokemons={ pokemon } key={ pokemon.id } />)[numPokemon]}
           </ul>
         <button className="btn btn-next" onClick={ this.nextPokemon }><FaArrowRight /></button>
         </div>
         <ul className="pokeSec">
-          {pokemons
+          {data
           .filter((pokemon) => pokemon.type.includes(filtro))
           .map((pokemon) => <Pokemon pokemons={ pokemon } key={ pokemon.id }/>)}
         </ul>

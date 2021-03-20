@@ -1,5 +1,6 @@
 .aloneDiv {
   background-color: white;
+  border: 5px solid gold;
   border-radius: 10px;
   box-shadow: 5px 5px 10px black;
   color: rgb(0, 0, 0);
@@ -11,7 +12,7 @@
   list-style-type: none;
   margin: 1rem;
   padding: 10px;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .divImg svg {
@@ -20,28 +21,27 @@
 
 .divImg {
   align-items: center;
-  background-image: url(./pokeball.svg);
+  background-image: url(../../svg/pokeball.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-
   flex-grow: 1;
+  flex-basis: 270px;
   display: flex;
   justify-content: center;
 }
 
 .info {
+  align-content:center;
   align-items: flex-start;
   display: flex;
-  font-family: cursive;
   font-size: 25px;
-  font-style: oblique;
-  font-weight: 900;
+  font-weight: 700;
+  flex-basis: 20rem;
   flex-direction: column;
   flex-grow: 1;
   line-height: 0.5;
   padding: 10px;
-  align-content:center;
 }
 
 .aloneDiv img {

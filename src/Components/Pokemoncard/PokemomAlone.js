@@ -15,7 +15,7 @@ class PokemonAlone extends Component {
         <div className='info'>
           <p>No.{this.props.pokemons.id} {this.props.pokemons.name}</p> 
           <p>{this.props.pokemons.type}</p>
-          <p>Average Weight: { height } { unit }</p>
+          <p>Average Height: { height } { unit }</p>
           <p>Average Weight: { value } { measurementUnit }</p>
         </div>
       </li>

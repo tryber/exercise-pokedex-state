@@ -906,7 +906,7 @@ const pokemons = [
       unit: "m"
     },
     averageWeight: {
-        value: 19,
+        value: 155,
         measurementUnit: "kg"
     },
     image: "https:\/\/cdn.bulbagarden.net/upload/c/c5/Spr_5b2_059.png",

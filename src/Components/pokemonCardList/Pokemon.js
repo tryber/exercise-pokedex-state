@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import './poke.css'
+import React, { Component } from 'react';
+import { shape, string, number } from 'prop-types';
+import './pokemon.css';
 
 class Pokemon extends Component {
   render() {
@@ -15,10 +16,17 @@ class Pokemon extends Component {
           <p>Average Height: { height } { unit }</p>
           <p>Average Weight: { value } { measurementUnit }</p>
         </div>
-        <img src={this.props.pokemons.image} ></img>
+        <img src={ this.props.pokemons.image } alt={ id }></img>
       </li>
     )
   }
-} 
+}
+
+Pokemon.propTypes = {
+  pokemons: shape({
+    id: number.isRequired,
+    name: string.isRequired,
+  }).isRequired,
+}
 
 export default Pokemon
