@@ -3,6 +3,8 @@ import './App.css';
 import pokemons from './data';
 import Pokedex from './Pokedex';
 
+// mudança mundana
+
 function App() {
   return (
     <div className="App">
