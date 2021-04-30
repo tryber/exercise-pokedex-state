@@ -1,0 +1,31 @@
+.pokeButao {
+  margin-left: 0.8rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.212);
+}
+.fireColor {
+  background-color: red;
+}
+.bugColor {
+  background-color: green;
+}
+.poisonColor {
+  background-color: purple;
+}
+.psychicColor {
+  background-color: pink;
+}
+.electricColor {
+  background-color: yellow;
+}
+.dragonColor {
+  background-color: tomato;
+}
+.normalColor {
+  background-color: turquoise;
+}
