@@ -1,3 +1,42 @@
 .App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  margin: auto;
 }
+
+.title {
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 50px;
+  padding: 0 20px;
+  width: fit-content;
+}
+
+.pokemon {
+  align-items: center;
+  background-color: whitesmoke;
+  border: 2px black solid;
+  border-radius: 10px;
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  margin: 10px;
+  width: 190px;
+}
+
+.pokedex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.pokedex section:hover {
+  background-color: gainsboro;  
+}
+

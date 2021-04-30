@@ -1,4 +1,5 @@
 body {
+  background-color: red;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -7,19 +8,92 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.pokemon {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex: 1 1 auto;
-  min-width: 25%;
-  margin: 10px 10px;
-  border: 1px gray solid;
-  border-radius: 10px;
+.pokeName {
+  font-weight: bold;
 }
 
-.pokedex {
+.centralized {
+  display: flex;
+  flex-direction: column; 
+}
+
+.centralized p {
+  margin: 7px;
+}
+
+.typeBox {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 10px;
+  background: white;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  width: 440px;
+}
+
+.All {
+  align-self: center;
+  background-color: white;
+  border-radius: 50px;
+  margin: 5px;
+  width: 100px;
+}
+
+.Bug {
+  align-self: center;
+  background-color: #a8b820;
+  border-radius: 50px;
+  margin: 5px;
+  width: 100px;
+}
+
+.Electric {
+  align-self: center;
+  background-color: #f8d030;
+  border-radius: 50px;
+  margin: 5px;
+  width: 100px;
+}
+
+.Dragon {
+  align-self: center;
+  background-color: #7038f8;
+  border-radius: 50px;
+  color: white;
+  margin: 5px;
+  width: 100px;
+}
+
+.Fire {
+  align-self: center;
+  background-color: #f08030;
+  border-radius: 50px;
+  margin: 5px;
+  width: 100px;
+}
+
+.Normal {
+  align-self: center;
+  background-color: #a8a878;
+  border-radius: 50px;
+  margin: 5px;
+  width: 100px;
+}
+
+.Poison {
+  align-self: center;
+  background-color: #a040a0;
+  border-radius: 50px;
+  color: white;
+  margin: 5px;
+  width: 100px;
+}
+
+.Psychic {
+  align-self: center;
+  background-color: #f85888;
+  border-radius: 50px;
+  margin: 5px;
+  width: 100px;
 }
