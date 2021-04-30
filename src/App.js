@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import pokemons from './data';
 import Pokedex from './Pokedex';
-import filters from './components/data';
+import FilterButtons from './components/FilterButtons';
+import ChangeButton from './components/ChangeButton';
 
 class App extends React.Component {
   constructor() {
@@ -17,40 +18,16 @@ class App extends React.Component {
   }
 
   nextPoke = () => {
-    this.setState((previewState, _props) => {
-      if (previewState.choiced < previewState.pokemons.length -1){
-        return (
-          {
-            ...previewState,
-            choiced: previewState.choiced + 1,
-          }
-        )
-      } else {
-        return (
-          {
-            ...previewState,
-            choiced: 0,
-          }
-        )
-      }
-      })
+    this.setState((previewState, _props) => (
+      {
+        choiced: previewState.choiced < previewState.pokemons.length -1 ? previewState.choiced + 1 : 0,
+      }));
   }
 
   setFilter = (event) => {
     const filter = event.target.innerText === 'All' ? '' : event.target.innerText;
-    this.setState((previewState, _props) => {
-      const filteredPokemons = pokemons.filter((pokemon) => pokemon.type.includes(filter));
-      filteredPokemons.length > 1 ? 
-      document.getElementsByClassName('buttonChange')[0].style.backgroundColor = 'forestgreen' :
-      document.getElementsByClassName('buttonChange')[0].style.backgroundColor = 'grey';
-      return(
-        {
-        ...previewState,
-        pokemons: filteredPokemons,
-        choiced: 0,
-      }
-      )  
-    })
+    const filteredPokemons = pokemons.filter((pokemon) => pokemon.type.includes(filter));
+    this.setState({pokemons: filteredPokemons, choiced: 0 });
   }
 
   render() {
@@ -58,16 +35,11 @@ class App extends React.Component {
       <div className="App">
         <h1> Pokedex </h1>
         <Pokedex pokemons={this.state.pokemons} choiced={this.state.choiced} />
-        <section className="filterConteiner">
-          {filters.map((filter, index) => (
-            <button key={index} className="filterButton" onClick={this.setFilter}>{filter}</button>
-          ))}
-        </section> 
-        <button onClick={this.nextPoke} className="buttonChange">Próximo Pokemon</button> 
+        <FilterButtons setFilter={this.setFilter} />
+        <ChangeButton nextPoke={this.nextPoke} isAble={this.state.pokemons.length > 1} />
       </div>
     );
   } 
-
 }
 
 export default App;

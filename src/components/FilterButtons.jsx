@@ -6,7 +6,7 @@ class  FilterButtons extends React.Component {
     return (
       <section className="filterConteiner">
           {filters.map((filter, index) => (
-            <button key={index} className="filterButton" onClick={this.setFilter}>{filter}</button>
+            <button key={index} className="filterButton" onClick={this.props.setFilter}>{filter}</button>
           ))}
       </section> 
     )
