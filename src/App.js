@@ -1,14 +1,19 @@
 import React from 'react';
-import './App.css';
+
+import Pokedex from './components/Pokedex';
+
 import pokemons from './data';
-import Pokedex from './Pokedex';
+
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    <div className="App">
-      <h1> Pokedex </h1>
-      <Pokedex pokemons={pokemons} />
-    </div>
+    <>
+      <div className="App">
+        <Pokedex pokemons={pokemons} />
+      </div>
+      <GlobalStyle />
+    </>
   );
 }
 
