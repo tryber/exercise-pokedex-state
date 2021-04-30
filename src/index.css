@@ -1,4 +1,5 @@
 body {
+  background-color: cornflowerblue;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -8,18 +9,29 @@ body {
 }
 
 .pokemon {
+  background-color: azure;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex: 1 1 auto;
   min-width: 25%;
+  max-width: 522px;
   margin: 10px 10px;
-  border: 1px gray solid;
+  border: 1px rgb(8, 8, 8) solid;
   border-radius: 10px;
 }
 
 .pokedex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 10px 10px;
+}
+
+.poke-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: chocolate;
+  color: white;
 }
