@@ -1,3 +1,47 @@
+body{
+  background-color: rgb(228, 228, 228);
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterConteiner{
+  display: flex;
+  justify-content:baseline;
+  flex-direction: row;
+  align-items:initial;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  background-color:orange;
+  color: aliceblue;
+  font-weight: bolder;
+  border: none;
+
+}
+
+.pokemon {
+  width: 300px;
+  height: 140px;
+  background-color: white;
+}
+
+.buttonChange {
+  width: 100px;
+  height: 50px;
+  background-color: forestgreen;
+  color: aliceblue;
+  font-weight: bolder;
+  border: none;  
 }
