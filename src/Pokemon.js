@@ -1,6 +1,15 @@
 import React from 'react';
 
 class Pokemon extends React.Component {
+    constructor(props) {
+        super();
+        this.state = {
+            name: '',
+            type: '',
+            averageWeight: 0,
+            image: '',
+        }
+    }
     render() {
         const { name, type, averageWeight, image } = this.props.pokemon;
 
