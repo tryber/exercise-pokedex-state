@@ -6,7 +6,7 @@ class Pokedex extends React.Component {
     constructor(props) {
         super();
         this.state = {
-            nextType: 'Psychic',
+            nextType: 'All',
             next: 0,
         }
     }
@@ -22,21 +22,27 @@ class Pokedex extends React.Component {
         });
     }
 
-    filterMethod = (type) => {
+    pokeFilter = (type) => {
         return this.props.pokemons.filter((pokemon) => pokemon.type === type);
     }
 
     render() {
         const { nextType, next } = this.state;
-        const poke = nextType === 'Fire' ? this.filterMethod('Fire') : this.filterMethod('Psychic');
+        let poke = [];
+        if (nextType === 'All') {
+            poke = this.props.pokemons;
+        } else {
+            poke = nextType === 'Fire' ? this.pokeFilter('Fire') : this.pokeFilter('Psychic');
+        }
         return (
             <div>
                 <div className="pokedex">
                     {/* {this.props.pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)} */}
                     <Pokemon key={poke[next].id} pokemon={poke[next]} />
                 </div>
-                <button name="Fire" value={poke.length} onClick={this.handleClick}>Next Fire</button>
-                <button name="Psychic" value={poke.length} onClick={this.handleClick}>Next Psychic</button>
+                <button name="All" value={poke.length} onClick={this.handleClick}>All</button>
+                <button name="Fire" value={poke.length} onClick={this.handleClick}>Fire</button>
+                <button name="Psychic" value={poke.length} onClick={this.handleClick}>Psychic</button>
             </div>
         );
     }
