@@ -1,3 +1,67 @@
-.App {
+.app {
   text-align: center;
+  color: #64b5f6;
+}
+
+.app h1 {
+  margin: 0;
+  color:#a6d4fa
+}
+
+.pokedex {
+  padding: 0 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.pokemon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 300px;
+  max-width: 390px;
+  border: 1px solid white;
+  margin: 5px auto;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+.filterPokemons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+button {
+  width: 110px;
+  margin: 13px 30px;
+  border-radius: 15px;
+  border: none;
+}
+
+.filterPokemons button {
+  background-color: #ffb74d;
+  height: 40px
+}
+
+.filterPokemons button:active {
+  background-color: #ff9800;
+  height: 40px;
+}
+
+.controler button {
+  background-color: #81c784;
+  font-weight: bold;
+  height: 50px;
+}
+
+.controler button:active{
+  background-color: #4caf50
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid
 }

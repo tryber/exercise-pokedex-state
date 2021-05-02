@@ -1,67 +1,70 @@
-Esse é um projeto para o conteúdo de `Componentes com estado`.
+# Getting Started with Create React App
 
-### Antes de iniciar
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Crie um fork desse projeto e para isso siga esse [tutorial de como realizar um fork](https://guides.github.com/activities/forking/).
+## Available Scripts
 
-Após feito o fork, clone o repositório criado para o seu computador.
+In the project directory, you can run:
 
-Rode o `npm install`.
+### `npm start`
 
-Vá para a branch master do seu projeto e execute o comando:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-git branch
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Mude para a branch pokedex-state com o comando git checkout -b pokedex-state. É nessa branch que você realizará a solução para o exercício.
+### `npm test`
 
-Observe o que deve ser feito nas instruções.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Após a solução dos exercícios, abra um PR no seu repositório forkado e, se quiser, mergeie para a master, sinta-se a vontade!
+### `npm run build`
 
-**Atenção!** Quando for criar o PR você irá se deparar com essa tela:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![PR do exercício](images/example-pr.png)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-É necessário realizar uma mudança. Clique no *base repository* como na imagem abaixo:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![Mudando a base do repositório](images/change-base.png)
+### `npm run eject`
 
-Mude para o seu repositório. Seu nome estará na frente do nome dele, por exemplo: `antonio/pokedex-state`. Depois desse passo a página deve ficar assim:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-![Após mudança](images/after-change.png)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Agora basta criar o PULL REQUEST clicando no botão `Create Pull Request`.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Para cada PR realize esse processo.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### COMEÇANDO OS EXERCÍCIOS
+## Learn More
 
-Hoje você vai incrementar a sua Pokedex utilizando State. Caso você queira reutilizar a sua Pokedex de exercícios anteriores, basta substituir a pasta src desse repositório pela src da sua pokedex já pronta, após seguir os passos de `Antes de iniciar`.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Se você não tiver feito, sem problemas, aqui você ja vai encontrar o comportamento esperado da sua Pokedex após os últimos exercícios.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-#### Exercício 1
+### Code Splitting
 
-- Altere a sua página para que, ao invés de exibir toda a lista de pokémons, ela exiba um pokémon por vez. Ao apertar um botão de Próximo pokémon, a página passa a exibir o próximo pokémon da lista, e depois o próximo, e assim sucessivamente. Ao se chegar ao último pokémon da lista, a pokedex deve voltar para o primeiro pokémon no apertar do botão. Dica: Lembre-se disso!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-#### Exercício 2
+### Analyzing the Bundle Size
 
-- Sua pokedex deve ter dois botões contendo os tipos Fire e Psychic. A partir dessa seleção, a pokedex deve circular somente pelos pokémons daquele tipo. Quando a página carrega, um desses filtros deve estar selecionado.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-#### Bônus
+### Making a Progressive Web App
 
-Agora que você pegou todos os pokémons, consegue pegar todos os bônus?! Não é fácil completar todos! Faça quantos conseguir.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- Separe os estilos de CSS por componente, fazendo um arquivo .css para cada.
+### Advanced Configuration
 
-- Sua pokedex deve ter um terceiro botão chamado All para resetar o filtro. Após clicá-lo, a pokedex deve voltar a circular por todos os pokémons. Quando a página carrega, o filtro selecionado deve ser o All.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- Crie um componente Button e use-o para fazer os botões reutilizáveis da sua Pokedex. Dica: pesquise sobre o this.props.children do React!
+### Deployment
 
-- Faça os botões de filtragem serem dinâmicos: sua pokedex deve gerar um botão de filtragem para cada tipo de pokémon disponível nos dados, independente de quais ou quantos sejam, sem repetição de tipos. Ou seja, se sua pokedex possui pokémons do tipo Fire, Psychic, Electric e Normal, deve aparecer como opção de filtro um botão para cada um desses tipos. Além disso, ela deve manter o botão All.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- Faça o botão de Próximo pokémon ser desabilitado se a lista filtrada de pokémons tiver um só pokémon.
+### `npm run build` fails to minify
 
-Abaixo, um exemplo com todos os bônus feitos:
-
-![Pokedex finalizada](images/pokedex.gif)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
