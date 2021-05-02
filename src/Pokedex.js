@@ -1,5 +1,6 @@
 import React from 'react';
 import Pokemon from './Pokemon';
+import Button from './Button';
 import './pokedex.css';
 
 class Pokedex extends React.Component {
@@ -40,9 +41,9 @@ class Pokedex extends React.Component {
                     {/* {this.props.pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)} */}
                     <Pokemon key={poke[next].id} pokemon={poke[next]} />
                 </div>
-                <button name="All" value={poke.length} onClick={this.handleClick}>All</button>
-                <button name="Fire" value={poke.length} onClick={this.handleClick}>Fire</button>
-                <button name="Psychic" value={poke.length} onClick={this.handleClick}>Psychic</button>
+                <Button name="All" value={poke.length} onClick={this.handleClick} />
+                <Button name="Fire" value={poke.length} onClick={this.handleClick} />
+                <Button name="Psychic" value={poke.length} onClick={this.handleClick} />
             </div>
         );
     }
