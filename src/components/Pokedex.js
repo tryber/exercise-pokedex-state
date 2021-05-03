@@ -28,7 +28,7 @@ class Pokedex extends React.Component {
     return (
       <div className="pokedex-container" id="pokedex">
         {pokedexCards[this.state.pokemonIndex]}
-        <Button event={ this.handlePokeList } />
+        <Button event={ this.handlePokeList } content="PRÓXIMO POKEMON" />
       </div>
     );
   }
