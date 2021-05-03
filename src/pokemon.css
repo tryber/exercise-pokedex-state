@@ -1,0 +1,12 @@
+.pokemon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    min-width: 25%;
+    margin: 10px 10px;
+    border: 3px gray solid;
+    border-radius: 10px;
+    background-color: rgb(35, 117, 223);
+    color:white;
+  }
