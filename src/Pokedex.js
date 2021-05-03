@@ -51,10 +51,10 @@ class Pokedex extends React.Component {
                     <Pokemon key={poke[next].id} pokemon={poke[next]} />
                 </div>
                 <div>
-                    {types.map((type) => <Button key={type} name={type} type={type} value={poke.length} handleClick={this.handleClickFilter} />)}
+                    {types.map((type) => <Button key={type} btnClass="filter" name={type} type={type} value={poke.length} handleClick={this.handleClickFilter} />)}
                 </div>
                 {/* https://stackoverflow.com/questions/41488715/how-to-disable-button-in-react-js */}
-                <Button name={'Next'} type={nextType} value={poke.length} handleClick={this.handleClick} disable={poke.length === 1} />
+                <Button btnClass="filter next" name={'Next'} type={nextType} value={poke.length} handleClick={this.handleClick} disable={poke.length === 1} />
             </div>
         );
     }

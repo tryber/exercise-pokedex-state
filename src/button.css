@@ -1,0 +1,19 @@
+.filter {
+  padding: 15px 0;
+  margin: 2px;
+  border: 0;
+  width: 120px;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+  background-color: orange;
+}
+
+.next {
+  margin-top: 15px;
+  background-color: green;
+}
+
+:disabled {
+  background-color: grey;
+}

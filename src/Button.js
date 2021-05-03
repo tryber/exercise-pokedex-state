@@ -1,10 +1,11 @@
 import React from 'react';
+import './button.css';
 
 class Button extends React.Component {
   render() {
-    const { name, type, value, handleClick, disable } = this.props;
+    const { btnClass, name, type, value, handleClick, disable } = this.props;
     return (
-      <button  disabled={disable} name={type} value={value} onClick={handleClick}>{name}</button>
+      <button  className={btnClass} disabled={disable} name={type} value={value} onClick={handleClick}>{name}</button>
     );
   }
 }
