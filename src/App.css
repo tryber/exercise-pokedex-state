@@ -53,6 +53,10 @@
   flex-wrap: wrap;
 }
 
+.card-show {
+  display: none;
+}
+
 .card-info p {
   margin: 0 10px;
 }
