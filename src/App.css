@@ -34,18 +34,23 @@
   margin: 100px auto;
 }
 
+.types-button-container {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+
 .pokedex-button {
   align-items: center;
-  background-color: #1ce4e4c9;
+  background-color: #7de41cc9;
   border: 1px solid #32444b49;
   border-radius: .25em;
   color: #32494be0;
   display: flex;
   height: 40px;
   justify-content: center;
-  margin-top: 13px;
-  width: 190px;
-  
+  margin: 13px 5px 5px;
+  width: 181px;
 }
 
 .pokedex-card {
@@ -92,6 +97,10 @@
 .pokedex-card a:hover {
   background-color: #32444b;
   color: #e4d01ce1;
+}
+
+.botton-buttons {
+  display: flex;
 }
 
 .footer a {

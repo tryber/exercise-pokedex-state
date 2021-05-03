@@ -1,5 +1,6 @@
 import React from 'react';
 import pokemons from './data.js';
+import Types from './TypeButtons.js';
 import Pokemon from './Pokemons.js';
 import Button from './PokeButton.js'
 
@@ -27,8 +28,14 @@ class Pokedex extends React.Component {
     const pokedexCards = pokemons.map((pokemon) => <Pokemon monster={ pokemon } key={ pokemon.name } />);
     return (
       <div className="pokedex-container" id="pokedex">
+        <Types handle={ this.handlePokeList } />
         {pokedexCards[this.state.pokemonIndex]}
-        <Button event={ this.handlePokeList } content="PRÓXIMO POKEMON" />
+
+        <div className="botton-buttons">
+          <Button event={ this.handlePokeList } content="PRÓXIMO" />
+          <Button event={ this.handlePokeList } content="ALL" />
+        </div>
+        
       </div>
     );
   }
