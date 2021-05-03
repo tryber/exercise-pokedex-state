@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header.js';
 import Pokedex from './components/Pokedex.js';
+import Button from './components/PokeButton.js';
 import Footer from './components/Footer.js';
 import './App.css';
 
@@ -15,8 +16,9 @@ class App extends React.Component {
 
         <main className="App-main">
           <Pokedex />
+          <Button />
           <Footer />
-          
+
         </main>
       </div>
     );
