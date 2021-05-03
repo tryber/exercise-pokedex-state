@@ -16,6 +16,7 @@ class App extends React.Component {
         <main className="App-main">
           <Pokedex />
           <Footer />
+          
         </main>
       </div>
     );
