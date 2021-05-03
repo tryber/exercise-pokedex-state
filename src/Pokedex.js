@@ -12,6 +12,13 @@ class Pokedex extends React.Component {
         }
     }
 
+    handleClickFilter = ({ target: { name, value } }) => {
+        this.setState({
+            nextType: name,
+            next: 0
+        });
+    }
+
     handleClick = ({ target: { name, value } }) => {
         const len = value - 1;
         this.setState((prevState, _props) => {
@@ -36,15 +43,18 @@ class Pokedex extends React.Component {
         // https://levelup.gitconnected.com/7-ways-to-remove-duplicates-from-array-in-javascript-cea4144caf31
         const types = [...new Set(pokemons.map((pokemon) => pokemon.type))];
         types.unshift('All');
-        let poke = [];
-        poke = this.pokeFilter(nextType);
+        let poke = this.pokeFilter(nextType);
         return (
             <div>
                 <div className="pokedex">
                     {/* {this.props.pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)} */}
                     <Pokemon key={poke[next].id} pokemon={poke[next]} />
                 </div>
-                {types.map((type) => <Button key={type} type={type} value={poke.length} handleClick={this.handleClick} />)}
+                <div>
+                    {types.map((type) => <Button key={type} name={type} type={type} value={poke.length} handleClick={this.handleClickFilter} />)}
+                </div>
+                {/* https://stackoverflow.com/questions/41488715/how-to-disable-button-in-react-js */}
+                <Button name={'Next'} type={nextType} value={poke.length} handleClick={this.handleClick} disable={poke.length === 1} />
             </div>
         );
     }

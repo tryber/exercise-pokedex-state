@@ -2,9 +2,9 @@ import React from 'react';
 
 class Button extends React.Component {
   render() {
-    const { type, value, handleClick } = this.props;
+    const { name, type, value, handleClick, disable } = this.props;
     return (
-      <button name={type} value={value} onClick={handleClick}>{type}</button>
+      <button  disabled={disable} name={type} value={value} onClick={handleClick}>{name}</button>
     );
   }
 }
