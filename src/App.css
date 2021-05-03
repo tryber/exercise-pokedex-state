@@ -1,3 +1,96 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffffe3;
+}
+
+.App-header a {
+  text-decoration: none;
+  color: #e4e11cd3;
+}
+
+.App-header a:hover {
+  color: #1ce4e4ef;
+}
+
+.pokedex-container {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 100px auto;
+}
+
+.pokedex-card {
+  background-color: #e9e9e92f;
+  border: 1px solid #bebebe46;
+  border-radius: .25em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  width: 45%;
+  height: 150px;
+  margin: 10px 10px 0;
+  padding: 0 10px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-info p {
+  margin: 0 10px;
+}
+
+.pokedex-card a {
+  background-color: #32444be0;
+  border-radius: .25em;
+  color: #1ce4e4e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+}
+
+.pokedex-card a:hover {
+  background-color: #32444b;
+  color: #e4d01ce1;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #e4331ce1;
+}
+
+.footer a:hover {
+  color: #1ce4e4ef;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b6dadae3;
+  background-color: #282c34;
+  height: 30px;
+  width: 80%;
+  margin: 0 auto;
 }
