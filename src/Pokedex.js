@@ -5,7 +5,7 @@ import './pokedex.css';
 
 class Pokedex extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             nextType: 'All',
             next: 0,
@@ -24,26 +24,27 @@ class Pokedex extends React.Component {
     }
 
     pokeFilter = (type) => {
+        if (type === 'All') {
+            return this.props.pokemons;
+        }
         return this.props.pokemons.filter((pokemon) => pokemon.type === type);
     }
 
     render() {
+        const { pokemons } = this.props;
         const { nextType, next } = this.state;
+        // https://levelup.gitconnected.com/7-ways-to-remove-duplicates-from-array-in-javascript-cea4144caf31
+        const types = [...new Set(pokemons.map((pokemon) => pokemon.type))];
+        types.unshift('All');
         let poke = [];
-        if (nextType === 'All') {
-            poke = this.props.pokemons;
-        } else {
-            poke = nextType === 'Fire' ? this.pokeFilter('Fire') : this.pokeFilter('Psychic');
-        }
+        poke = this.pokeFilter(nextType);
         return (
             <div>
                 <div className="pokedex">
                     {/* {this.props.pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)} */}
                     <Pokemon key={poke[next].id} pokemon={poke[next]} />
                 </div>
-                <Button name="All" value={poke.length} onClick={this.handleClick} />
-                <Button name="Fire" value={poke.length} onClick={this.handleClick} />
-                <Button name="Psychic" value={poke.length} onClick={this.handleClick} />
+                {types.map((type) => <Button key={type} type={type} value={poke.length} handleClick={this.handleClick} />)}
             </div>
         );
     }
