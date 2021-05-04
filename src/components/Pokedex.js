@@ -9,33 +9,50 @@ class Pokedex extends React.Component {
     super(props);
     this.state = {
       pokemonIndex: 0,
+      pokedexFilter: 'All',
     };
   };
 
-  checkPokedexSize = () => (
-    (this.state.pokemonIndex === pokemons.length - 1) ?
-      this.setState(() => ({
-        pokemonIndex: 0,
-      })) :
-      this.setState((lastState, _props) => ({
-        pokemonIndex: lastState.pokemonIndex + 1,
-      }))
-  );
-
-  handlePokeList = () => this.checkPokedexSize();
+  handleFilter = (filter) => this.setState({
+    pokemonIndex: 0,
+    pokedexFilter: filter.target.value,
+  });
 
   render() {
+    const { pokedexFilter } = this.state;
+
+    const toFilter = pokemons.filter((pokemon) => pokemon.type === pokedexFilter)
+      .map((pokemon) => (
+        <Pokemon monster={ pokemon } key={ pokemon.name } />
+      ));
+
     const pokedexCards = pokemons.map((pokemon) => <Pokemon monster={ pokemon } key={ pokemon.name } />);
+
+    const validator = () => {
+      return (pokedexFilter !== 'All') ? toFilter : pokedexCards;
+    };
+
+    const handleLists = () => { // Resolver esse handle
+      const size = validator();
+
+      (this.state.pokemonIndex === size.length - 1) ?
+        this.setState(() => ({
+          pokemonIndex: 0,
+        })) :
+        this.setState((lastState, _props) => ({
+          pokemonIndex: lastState.pokemonIndex + 1,
+        }));
+    }
+
     return (
       <div className="pokedex-container" id="pokedex">
-        <Types handle={ this.handlePokeList } />
-        {pokedexCards[this.state.pokemonIndex]}
+        <Types handler={ this.handleFilter } />
+        {validator()[this.state.pokemonIndex]}
 
         <div className="botton-buttons">
-          <Button event={ this.handlePokeList } content="PRÓXIMO" />
-          <Button event={ this.handlePokeList } content="ALL" />
+          <Button event={ this.handleLists } content="PRÓXIMO" />
+          <Button event={ this.handleFilter } value="All" className="All" content="ALL" />
         </div>
-        
       </div>
     );
   }
