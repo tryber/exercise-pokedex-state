@@ -10,6 +10,7 @@ function App() {
       <Pokedex pokemons={pokemons} />
     </div>
   );
+  //aa
 }
 
 export default App;
