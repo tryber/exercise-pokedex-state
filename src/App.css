@@ -1,3 +1,52 @@
+body {
+  background-color: yellow;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon {
+  background-color: rgb(22, 139, 207);
+  border-radius: 20px;
+  border: solid 2px black;
+  margin: 1% 1%;
+  padding: 1% 0 0;
+  font-size: 15px;
+  box-sizing: content-box;
+  /* flex: 1 1 auto; */
+  width: 18%;
+  transition: 0.3s;
+  /* animation: mymove 2s infinite; */
+}
+
+h2 {
+  color: white;
+}
+
+.pokemon:hover {
+  transform: scale(1.05);
+}
+
+@keyframes mymove {
+  0% {
+    transform: rotate(-10deg)
+  }
+  50%{
+    transform: rotate(10deg)
+  }
+  100%{
+    transform: rotate(-10deg)
+  }
+}
+
+.pokemon-img {
+  min-width: 30%;
+}
+
+.botao {
+  display: block;
 }

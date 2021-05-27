@@ -1,0 +1,262 @@
+.pokedex {
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+
+.h1Div {
+  display: flex;
+  justify-content: center;
+  size: 40px;
+  color: rgb(0, 0, 0);
+  font-size: initial;
+  font-family: Helvetica Neue;
+  animation: h1move 1s infinite;
+}
+
+@keyframes h1move {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.row-btn-types {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row-btn-next {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-next {
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    background: rgb(5, 90, 170);
+    border: 0px solid rgb(2, 40, 75);
+    border-width: 0 0 4px 0;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    font-size: initial;
+    font-family: Helvetica Neue;
+    font-weight: 900;
+    font-style: normal;
+    border-radius: 10px;
+}
+.btn-next:active {
+  top: 3px;
+  border-width: 0 0 1px 0;
+}
+
+
+#All {
+  background: rgb(5, 90, 170);
+  border: 0px solid rgb(2, 40, 75);
+  border-width: 0 0 4px 0;
+  padding: 0.5% 2%;
+  color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 10px;
+  animation: mymove 4s infinite;
+  margin: 0 0.5% 1%;
+}
+
+#All:hover {
+  cursor: pointer;
+}
+
+#All:active {
+  top: 3px;
+  border-width: 0 0 1px 0;
+}
+
+@keyframes mymove {
+  0% {
+    background-color: red;
+  }
+  50%{
+    background-color: blue;
+  }
+  100%{
+    background-color: green;
+  }
+}
+
+
+#Bug{
+  background: rgb(69, 141, 10);
+  border: 0px solid rgb(2, 40, 75);
+  border-width: 0 0 4px 0;
+  padding: 0.5% 2%;
+  color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 10px;
+  margin: 0 0.5% 1%;
+}
+
+#Bug:hover {
+  cursor: pointer;
+}
+
+#Bug:active {
+  top: 3px;
+  border-width: 0 0 1px 0;
+}
+
+#Dragon {
+  background: rgb(187, 69, 15);
+  border: 0px solid rgb(2, 40, 75);
+  border-width: 0 0 4px 0;
+  padding: 0.5% 2%;
+  color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 10px;
+  margin: 0 0.5% 1%;
+}
+
+#Dragon:hover {
+  cursor: pointer;
+}
+
+#Dragon:active {
+  top: 3px;
+  border-width: 0 0 1px 0;
+}
+
+
+#Electric {
+  background: rgb(187, 145, 5);
+  border: 0px solid rgb(2, 40, 75);
+  border-width: 0 0 4px 0;
+  padding: 0.5% 2%;
+  color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 10px;
+  margin: 0 0.5% 1%;
+}
+
+#Electric:hover {
+  cursor: pointer;
+}
+
+#Electric:active {
+  top: 3px;
+  border-width: 0 0 1px 0;
+}
+
+#Fire {
+  background: rgb(194, 38, 11);
+  border: 0px solid rgb(2, 40, 75);
+  border-width: 0 0 4px 0;
+  padding: 0.5% 2%;
+  color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 10px;
+  margin: 0 0.5% 1%;
+}
+
+#Fire:hover {
+  cursor: pointer;
+}
+
+#Fire:active {
+  top: 3px;
+  border-width: 0 0 1px 0;
+}
+
+
+#Normal {
+  background: rgb(5, 90, 170);
+  border: 0px solid rgb(2, 40, 75);
+  border-width: 0 0 4px 0;
+  padding: 0.5% 2%;
+  color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 10px;
+  margin: 0 0.5% 1%;
+}
+
+#Normal:hover {
+  cursor: pointer;
+}
+
+#Normal:active {
+  top: 3px;
+  border-width: 0 0 1px 0;
+}
+
+
+#Poison {
+  background: rgb(22, 165, 9);
+  border: 0px solid rgb(2, 40, 75);
+  border-width: 0 0 4px 0;
+  padding: 0.5% 2%;
+  color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 10px;
+  margin: 0 0.5% 1%;
+}
+
+#Poison:hover {
+  cursor: pointer;
+}
+
+#Poison:active {
+  top: 3px;
+  border-width: 0 0 1px 0;
+}
+
+#Psychic {
+  background: rgb(159, 170, 5);
+  border: 0px solid rgb(2, 40, 75);
+  border-width: 0 0 4px 0;
+  padding: 0.5% 2%;
+  color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 10px;
+  margin: 0 0.5% 1%;
+}
+
+#Psychic:hover {
+  cursor: pointer;
+}
+
+#Psychic:active {
+  top: 3px;
+  border-width: 0 0 1px 0;
+}
