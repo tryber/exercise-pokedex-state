@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import pokemons from './data';
 import Pokedex from './Pokedex';
-
+//alo
 function App() {
   return (
     <div className="App">
