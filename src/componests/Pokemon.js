@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class Pokemon extends Component {
   render() {
-    const { id, image, type, name, moreInfo, averageWeight } = this.props;
+    const { id, image, type, name, moreInfo, averageWeight } = this.props.pok;
     return (
       <div>
         <div>
