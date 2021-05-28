@@ -16,7 +16,7 @@ class App extends Component {
   }
   nextIndex () {
     if(this.state.pokeIndex === this.state.currentData.length -1) {
-      this.setState(_ => ({
+      this.setState(({
         pokeIndex: 0
       }))
     } else {
