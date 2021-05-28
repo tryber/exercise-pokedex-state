@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
 import Pokemon from './Pokemon';
+import React, { Component } from 'react';
 
 
 class Pokedex extends Component {
   render() {
-    const { Pokedex } = this.props;
     return (
-      {Pokedex.map((value)=> ({
-        <Pokemon pok={value}/>
-      }))}
+      <div>
+        {this.props.Pokedex.map((value)=> <Pokemon pok={value}/>)}
+      </div>
       
     )
   }
