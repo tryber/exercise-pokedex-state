@@ -52,7 +52,6 @@ class App extends Component {
         <button onClick={this.FilterPoke }>Fire</button>
         <button onClick={this.FilterPoke }>Normal</button>
         <button onClick={this.FilterPoke }>Psychic</button>
-        
       </div>
     );
   }
