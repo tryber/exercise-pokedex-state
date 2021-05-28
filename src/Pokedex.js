@@ -2,27 +2,52 @@ import React from 'react';
 import Pokemon from './Pokemon';
 
 class Pokedex extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             next: 0,
+            nextType: this.props.pokemons,
         }
-        this.nextButtonFunc = this.nextButtonFunc.bind(this);
+    }
+
+    elementPokemonBtn = (element) => {
+        const { pokemons } = this.props;
+        const filteredPokemons = pokemons.filter((each) => each.type === element);
+        this.setState((prevState, _props) => ({
+            nextType:  filteredPokemons,
+            next: 0,
+        }));
     }
 
     nextButtonFunc = () => {
-        console.log(this.props.pokemons)
+        const { pokemons } = this.props;
+        console.log(pokemons.length)
         this.setState((prevState, _props) => ({
-            next: this.props.pokemons.length - 1 === prevState.next ? 0 : prevState.next + 1
+            next: prevState.next + 1 === this.state.nextType.length ? 0 : prevState.next + 1,
         }));
     }
+
+    showAllPokemons = () => {
+        const { pokemons } = this.props;
+        this.setState((prevState, _props) => ({
+            nextType: pokemons,
+            next: 0,
+        }));
+    }
+
     render() {
+
+    const elements = this.props.pokemons.map((item) => item.type)
+    const noRepeatElements =[ ...new Set(elements) ];
+
         return (
         <div>
             <div className="pokedex">
-                <Pokemon key={this.props.pokemons.name} pokemon={this.props.pokemons[this.state.next]} />
+                <Pokemon pokemon={this.state.nextType[this.state.next]} />
             </div>
             <button onClick={this.nextButtonFunc}>Next</button>
+            {noRepeatElements.map((item, index) => <button key={ index }onClick={() => this.elementPokemonBtn(item)}>{ item }</button>)}
+            <button onClick={this.showAllPokemons}>Show All Pokemons</button>
         </div>
         );
     }

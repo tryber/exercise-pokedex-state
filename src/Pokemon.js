@@ -2,16 +2,16 @@ import React from 'react';
 
 class Pokemon extends React.Component {
     render() {
-        const { name, type, averageWeight, image } = this.props.pokemon;
+        const { pokemon: { name, type, averageWeight, image } } = this.props;
 
         return (
             <div className="pokemon">
                 <div>
-                    <p> {name} </p>
+                    <p className='nome'> {name} </p>
                     <p> {type} </p>
-                    <p> {`Average weight: ${averageWeight.value} ${averageWeight.measurementUnit}`}</p>
+                    <p className='nome'> {`Average weight: ${averageWeight.value} ${averageWeight.measurementUnit}`}</p>
                 </div>
-                <img src={image} alt={`${name} sprite`} />
+                <img src={image} className='pokemonImg' alt={`${name} sprite`} />
             </div>
         );
     }

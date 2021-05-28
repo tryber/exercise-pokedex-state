@@ -1,3 +1,33 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: brown;
+}
+
+.pokedex {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon {
+  width: 20rem;
+  height: 10rem;
+}
+
+.nome {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.pokemonImg {
+  background-color: rgb(255, 255, 255);
 }
