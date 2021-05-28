@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React from "react";
+import "./button.css";
 
 const Button = ({ className, children, disabled, onClick }) => (
   <button
@@ -10,6 +11,4 @@ const Button = ({ className, children, disabled, onClick }) => (
   </button>
 );
 
-
-
-export default Button
+export default Button;
