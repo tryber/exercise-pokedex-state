@@ -1,20 +1,13 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class ButtonType extends Component {
-  typePokemon() {
-    let { setPokemons, setIndex, index } = this.props.values;
-    index = 0;
-    setIndex(index);
-    setPokemons(this.props.type);
-  }
+const Button = ({ className, children, disabled, onClick }) => (
+  <button
+    onClick={ onClick }
+    className={`button-text ${className}`}
+    disabled={ disabled }
+  >
+    { children }
+  </button>
+);
 
-  render() {
-    return (
-      <button className="row-btn-types" onClick={this.typePokemon.bind(this)}>
-        {this.props.type || 'All' }
-      </button>
-    );
-  }
-}
-
-export default ButtonType;
+export default Button;

@@ -2,7 +2,7 @@
 import React from 'react';
 import Pokemon from './Pokemon';
 import Button from './Button';
-import './pokedex.css';
+
 
 class Pokedex extends React.Component {
   constructor(props) {
