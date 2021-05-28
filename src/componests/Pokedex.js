@@ -7,9 +7,9 @@ import Button from './Button';
 class Pokedex extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      pokemonIndex: 0,
-      filteredType: 'all',
+    this.state = { // criando um estado 
+      pokemonIndex: 0, // index de pokemons 
+      filteredType: 'all', // tipo de pokemons
     };
   }
 
