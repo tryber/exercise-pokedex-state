@@ -1,3 +1,122 @@
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstBox {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pokedex {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  height: 20rem;
+}
+
+.nome {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.pokemonImg {
+  background-color: rgb(255, 255, 255);
+  flex-grow: 1;
+}
+
+.buttonGroup {
+  display: flex;
+}
+
+.Electric {
+  padding: 10px;
+  background-color: yellow;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.555) 1px 4px 4px 1px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.Fire {
+  padding: 10px;
+  background-color: rgb(255, 102, 0);
+  border: none;
+  margin: 10px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.555) 1px 4px 4px 1px;
+}
+
+.Psychic {
+  padding: 10px;
+  background-color: rgb(149, 0, 194);
+  border: none;
+  margin: 10px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.555) 1px 4px 4px 1px;
+}
+
+.Normal {
+  padding: 10px;
+  background-color: rgb(194, 194, 194);
+  border: none;
+  margin: 10px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.555) 1px 4px 4px 1px;
+}
+
+.Poison {
+  padding: 10px;
+  background-color: rgb(75, 25, 95);
+  border: none;
+  margin: 10px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.555) 1px 4px 4px 1px;
+}
+
+.Bug {
+  padding: 10px;
+  background-color: rgb(29, 110, 46);
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.555) 1px 4px 4px 1px;
+  color: white;
+}
+
+.Dragon {
+  padding: 10px;
+  background-color: rgb(172, 0, 29);
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.555) 1px 4px 4px 1px;
+  box-shadow: rgba(0, 0, 0, 0.555) 1px 4px 4px 1px;
 }

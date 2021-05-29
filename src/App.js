@@ -6,8 +6,10 @@ import Pokedex from './Pokedex';
 function App() {
   return (
     <div className="App">
+      <div className='firstBox'>
       <h1> Pokedex </h1>
-      <Pokedex pokemons={pokemons} />
+      <Pokedex pokemons={ pokemons } />
+      </div>
     </div>
   );
 }
