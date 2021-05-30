@@ -37,7 +37,7 @@ class Pokedex extends React.Component {
 
   render() {
     const listSelectPokemonType = pokemons.filter((pokemon) => pokemon.type === this.state.type)
-    console.log(listSelectPokemonType)
+    // console.log(listSelectPokemonType)
 
     return (
       <div className="pokedex">

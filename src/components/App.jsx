@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/App.css';
 import pokemons from './data';
 import Pokedex from './Pokedex';
+import Option from './Option';
 
 class App extends React.Component {
 
@@ -11,11 +12,7 @@ class App extends React.Component {
       <div className="App">
         <h1> Pokedex </h1>
         <Pokedex pokemons={pokemons} />
-        <select>
-          <option value="Orange">Orange</option>
-          <option value="Radish">Radish</option>
-          <option value="Cherry">Cherry</option>
-        </select>
+        <Option listType={pokemons.map(pokemon => pokemon.type)} />
       </div>
     );
   }
