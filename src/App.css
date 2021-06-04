@@ -1,7 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .App {
+  background-color: black;
+}
+
+.div-backGround {
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
+  background-image: url("https://i.pinimg.com/originals/41/91/c3/4191c3496447c6ff98ae0fc098c679ce.gif");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.div-pokedex {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/33d17e08-1e7a-47ec-93f8-028d20b3658b/d2yii0o-a3c9533f-bdd7-4f04-ac18-7aac981a55c4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMzZDE3ZTA4LTFlN2EtNDdlYy05M2Y4LTAyOGQyMGIzNjU4YlwvZDJ5aWkwby1hM2M5NTMzZi1iZGQ3LTRmMDQtYWMxOC03YWFjOTgxYTU1YzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.x5URKuo_rX0Lp3RBPKOuewBd9okgB1S3eAx3d5uHIZA");
+  height: 600px;
+  width: 400px;
+  background-size: cover;
+  border-radius: 6%;
+  border-width:6px;  
+  border-style:inset;
+  border-color: #DC2C30;
+
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+
+
+.div-btns {
+  display: flex;
+  margin-top: 20%;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 button {
-  background-color: brown;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8.5px;
+  /* background-image: linear-gradient(40deg, #4e4e4e, #000000); */
+  background-color: #242424;
+  color: white;
+  width: 20%;
+  height: 40px;
+  margin: 1%;
+  border-radius: 12%;
+}
+
+.pokemon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 auto;
+  min-width: 25%;
+  margin: 10px 10px;
+  border-radius: 6%;
+  border-width:6px;
+  border-style:inset;
+  border-color: #DC2C30;
+  width: 100px;
+  margin-top: 24%;
+  background-color: #38AEDC;
+  background-image: linear-gradient(to right, #a1e3fd, #38AEDC);
+}
+
+.Electric {
+  color: yellow;
+}
+
+.Fire {
+  color: red;
+}
+
+.Grass {
+  color: rgb(0, 233, 0);
+}
+
+.Bug {
+  color: rgb(77, 160, 0);
+}
+
+input { 
+  font-family: 'Press Start 2P', cursive;
+}
+
+.arrow {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.644);
+  font-size: 18px;
+  border-radius: 100%;
 }
