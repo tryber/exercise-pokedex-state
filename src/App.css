@@ -75,6 +75,11 @@ button {
   background-image: linear-gradient(to right, #a1e3fd, #38AEDC);
 }
 
+.PokeImg {
+  max-width: 98px;
+  max-height: 98px;
+}
+
 .Bug {
   color: #A8B81F;
 }
@@ -90,7 +95,7 @@ button {
 .Fairy {
   color: #EE99AC;
 }
-.Fight {
+.Fighting {
   color: #C03028;
 }
 .Fire {
