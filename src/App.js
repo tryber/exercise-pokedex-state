@@ -13,6 +13,7 @@ class App extends Component {
     this.nextIndex = this.nextIndex.bind(this)
     this.previusIndex = this.previusIndex.bind(this)
     this.AllPokes = this.AllPokes.bind(this)
+    this.openPokeInfo = this.openPokeInfo.bind(this)
     this.FilterPoke = this.FilterPoke.bind(this)
     this.FilterPokeByInfo = this.FilterPokeByInfo.bind(this)
   }
@@ -61,25 +62,30 @@ class App extends Component {
     })))
   }
 
+  openPokeInfo () {
+    window.open(this.state.currentData[this.state.pokeIndex].moreInfo, '_blank');
+  }
+
   render () {
     return (
       <div className="App">
         <div className="div-backGround">
-        <h1> Pokedex </h1>
-        <div className="div-pokedex">
-        <Pokedex pokemons={this.state.currentData[this.state.pokeIndex]} />
-        <div className="div-btns">
-          <button onClick={this.nextIndex }>Next</button>
-          <button onClick={this.AllPokes }>All</button>
-          <button onClick={this.FilterPoke }>Bug</button>
-          <button onClick={this.FilterPoke }>Dragon</button>
-          <button onClick={this.FilterPoke }>Electric</button>
-          <button onClick={this.FilterPoke }>Fire</button>
-          <button onClick={this.FilterPoke }>Normal</button>
-          <button onClick={this.FilterPoke }>Psychic</button>
-          <button className="arrow" onClick={this.previusIndex }> ᐊᐊᐊ </ button>
-        </div>
-        </div>
+        <img src="https://fontmeme.com/permalink/210604/2eed99a8a4cca847de2974b59abf9398.png" alt="Título Pokedex"/>
+          <div className="div-pokedex">
+            <Pokedex pokemons={this.state.currentData[this.state.pokeIndex]} />
+              <div className="div-btns">
+                <button className="arrow" onClick={this.previusIndex }> ᐊᐊᐊ </ button>
+                <button onClick={this.AllPokes }>All</button>
+                <button onClick={this.openPokeInfo}>More Info</button>
+                <button className="arrow" onClick={this.nextIndex }> ᐅᐅᐅ </button>
+                <button onClick={this.FilterPoke }>Bug</button>
+                <button onClick={this.FilterPoke }>Dragon</button>
+                <button onClick={this.FilterPoke }>Electric</button>
+                <button onClick={this.FilterPoke }>Fire</button>
+                <button onClick={this.FilterPoke }>Normal</button>
+                <button onClick={this.FilterPoke }>Psychic</button>
+              </div>
+          </div>
         </div>
       </div>
     );

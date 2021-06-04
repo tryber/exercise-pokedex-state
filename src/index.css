@@ -5,5 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #08486C;
+  background-image: linear-gradient(to right, #69ccf3, #38AEDC);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

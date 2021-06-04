@@ -2,6 +2,8 @@
 
 .App {
   background-color: black;
+  width: 1265px;
+  height: 600px;
 }
 
 .div-backGround {
@@ -73,20 +75,59 @@ button {
   background-image: linear-gradient(to right, #a1e3fd, #38AEDC);
 }
 
-.Electric {
-  color: yellow;
-}
-
-.Fire {
-  color: red;
-}
-
-.Grass {
-  color: rgb(0, 233, 0);
-}
-
 .Bug {
-  color: rgb(77, 160, 0);
+  color: #A8B81F;
+}
+.Dark {
+  color: #A8A878;
+}
+.Dragon {
+  color: #705848;
+}
+.Electric {
+  color: #F8D030;
+}
+.Fairy {
+  color: #EE99AC;
+}
+.Fight {
+  color: #C03028;
+}
+.Fire {
+  color: #F08030;
+}
+.Flying {
+  color: #A890F0;
+}
+.Ghost {
+  color: #705898;
+}
+.Grass {
+  color: #78C850;
+}
+.Ground {
+  color: #E0C068;
+}
+.Ice {
+  color: #98D8D8;
+}
+.Normal {
+  color: #A8A878;
+}
+.Poison {
+  color: #A040A0;
+}
+.Psychic {
+  color: #F85888;
+}
+.Rock {
+  color: #B8A038;
+}
+.Steel {
+  color: #B8B8D0;
+}
+.Water {
+  color: #6890F0;
 }
 
 input { 
