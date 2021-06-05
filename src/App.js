@@ -74,16 +74,30 @@ class App extends Component {
           <div className="div-pokedex">
             <Pokedex pokemons={this.state.currentData[this.state.pokeIndex]} />
               <div className="div-btns">
-                <button className="arrow" onClick={this.previusIndex }> ᐊᐊᐊ </ button>
-                <button onClick={this.AllPokes }>All</button>
-                <button onClick={this.openPokeInfo}>More Info</button>
-                <button className="arrow" onClick={this.nextIndex }> ᐅᐅᐅ </button>
+                <div className="div-btns-comand">
+                  <button className="arrow" onClick={this.previusIndex }> ᐊᐊᐊ </ button>
+                  <button className="comand-btn" onClick={this.AllPokes }>All</button>
+                  <button className="comand-btn" onClick={this.openPokeInfo}>More Info</button>
+                  <button className="arrow" onClick={this.nextIndex }> ᐅᐅᐅ </button>
+                </div>
+                <div className="div-btns-type">
                 <button onClick={this.FilterPoke }>Bug</button>
                 <button onClick={this.FilterPoke }>Dragon</button>
                 <button onClick={this.FilterPoke }>Electric</button>
+                <button onClick={this.FilterPoke }>Fairy</button>
+                <button onClick={this.FilterPoke }>Fighting</button>
                 <button onClick={this.FilterPoke }>Fire</button>
+                <button onClick={this.FilterPoke }>Flying</button>
+                <button onClick={this.FilterPoke }>Ghost</button>
+                <button onClick={this.FilterPoke }>Grass</button>
+                <button onClick={this.FilterPoke }>Ground</button>
+                <button onClick={this.FilterPoke }>Ice</button>
                 <button onClick={this.FilterPoke }>Normal</button>
                 <button onClick={this.FilterPoke }>Psychic</button>
+                <button onClick={this.FilterPoke }>Poison</button>
+                <button onClick={this.FilterPoke }>Rock</button>
+                <button onClick={this.FilterPoke }>Water</button>
+                </div>
               </div>
           </div>
         </div>

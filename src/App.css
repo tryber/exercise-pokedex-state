@@ -40,9 +40,8 @@
 
 .div-btns {
   display: flex;
-  margin-top: 20%;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
@@ -71,7 +70,6 @@ button {
   border-color: #DC2C30;
   width: 100px;
   margin-top: 24%;
-  background-color: #38AEDC;
   background-image: linear-gradient(to right, #a1e3fd, #38AEDC);
 }
 
@@ -144,4 +142,17 @@ input {
   color: rgba(255, 255, 255, 0.644);
   font-size: 18px;
   border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.div-btns-comand {
+  display: flex;
+  align-items: center;
+  margin-right: 13%;
+}
+
+.comand-btn {
+  width: 80px;
+  height: 50px;
 }
