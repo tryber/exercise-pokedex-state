@@ -69,6 +69,7 @@ button {
   border-style:inset;
   border-color: #DC2C30;
   width: 100px;
+  height: 128px;
   margin-top: 24%;
   background-image: linear-gradient(to right, #a1e3fd, #38AEDC);
 }
