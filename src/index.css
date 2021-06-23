@@ -11,15 +11,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex: 1 1 auto;
+  width: 300px;
   min-width: 25%;
-  margin: 10px 10px;
+  margin: auto auto 20px;
   border: 1px gray solid;
   border-radius: 10px;
-}
-
-.pokedex {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px 10px;
 }
