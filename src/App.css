@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+
+.container {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+}
