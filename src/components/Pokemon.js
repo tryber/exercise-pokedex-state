@@ -7,26 +7,26 @@ class Pokemon extends React.Component {
   constructor(props) {
     super(props);
     this.changePokemon = this.changePokemon.bind(this);
-    this.pokemonsPerTypes = this.pokemonsPerTypes.bind(this);
     this.changeType = this.changeType.bind(this);
-    this.arrayFromType = this.arrayFromType.bind(this);
-    this.actualPokemon = this.actualPokemon.bind(this);
-    this.nextButtonClass = this.nextButtonClass.bind(this);
   
-    this.types = props.pokemons.reduce((acc, { type }) => {
-      if (!acc.includes(type)) { acc.push(type); }
-      return acc;
-    }, []);
+    this.types = props.pokemons
+      .reduce((acc, { type }) => {
+        if (!acc.includes(type)) { acc.push(type); }
+        return acc;
+      }, []);
   
     this.state = {
       pokemonIndex: 0,
-      pokemonType: 'All',
+      pokemonType: 'all',
     }
   }
 
   changePokemon(array) {
-    if (this.state.pokemonIndex < array.length - 1) {
-      this.setState({ pokemonIndex: this.state.pokemonIndex + 1 });
+    const { state } = this;
+    const { pokemonIndex } = state;
+
+    if (pokemonIndex < array.length - 1) {
+      this.setState({ pokemonIndex: pokemonIndex + 1 });
     } else {
       this.setState({ pokemonIndex: 0 });
     }
@@ -34,7 +34,8 @@ class Pokemon extends React.Component {
 
   pokemonsPerTypes(pokemonType) {
     const { pokemons } = this.props;
-    if (this.types.includes(pokemonType)) {
+    const { types } = this;
+    if (types.includes(pokemonType)) {
       return pokemons.filter(({ type }) => type === pokemonType);
     } else {
       return pokemons;
@@ -46,16 +47,17 @@ class Pokemon extends React.Component {
   }
 
   arrayFromType() {
-
-    return this.pokemonsPerTypes(this.state.pokemonType);
+    const { pokemonType } = this.state;
+    return this.pokemonsPerTypes(pokemonType);
   }
 
   actualPokemon() {
-    if (this.state.pokemonIndex >= this.arrayFromType().length){
+    const { pokemonIndex } = this.state
+
+    if (pokemonIndex >= this.arrayFromType().length) {
       return this.arrayFromType()[0];
-    } else {
-      return this.arrayFromType()[this.state.pokemonIndex];
     }
+    return this.arrayFromType()[pokemonIndex];
   }
 
   nextButtonClass(pokemon) {
@@ -66,9 +68,12 @@ class Pokemon extends React.Component {
   }
 
   render() {
+    const { types } = this;
+
     const pokArr = this.arrayFromType()
     const pokemon = this.actualPokemon();
     const { name, type, averageWeight, image } = pokemon;
+    const { value, measurementUnit } = averageWeight
 
     const buttonClass = this.nextButtonClass(pokArr);
 
@@ -78,16 +83,18 @@ class Pokemon extends React.Component {
           <div>
             <p>{ name }</p>
             <p>{ type }</p>
-            <p>{`Average weight: ${averageWeight.value} ${averageWeight.measurementUnit}`}</p>
+            <p>{`Average weight: ${value} ${measurementUnit}`}</p>
           </div>
           <img src={image} alt={`${name} sprite`} />
         </section>
         <section className="typeButtonContainer">
-          <Button key={ 'All' } text={ 'All' } click={ () => this.changeType('All') } />
-          <TypeButtons types={ this.types } click={ this.changeType } className={ this.types }/>
+          <Button key={ 'all' } text={ 'all' } click={ () => this.changeType('all') } />
+          <TypeButtons types={ types } click={ this.changeType } className={ types } />
         </section>
-        <Button text={ 'Next Pokemon' } className={ buttonClass }
-          click={ () => { this.changePokemon(pokArr) }}/>
+        <section>
+          <Button text={ 'Next Pokemon' } className={ buttonClass }
+            click={ () => { this.changePokemon(pokArr) }} />
+        </section>
       </main>
     );
   }

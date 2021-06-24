@@ -15,4 +15,4 @@ TypeButtons.propTypes = {
   click: PropTypes.func.isRequired,
 }
 
-export default TypeButtons;;
+export default TypeButtons;
