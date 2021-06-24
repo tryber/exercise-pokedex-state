@@ -5,21 +5,98 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(78, 78, 78);
+}
+
+h1 {
+  color: white;
 }
 
 .pokemon {
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex: 1 1 auto;
+  width: 300px;
   min-width: 25%;
-  margin: 10px 10px;
+  margin: auto;
   border: 1px gray solid;
   border-radius: 10px;
 }
 
-.pokedex {
+.button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 110%;
+  border: none;
+  background-color: white;
+  border-radius: 4px;
+  width: 100px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.typeButtonContainer {
+  margin: auto;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 10px;
+  justify-content: space-between;
+}
+
+.nextButton {
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 3px black;
+  color: #000;
+  width: 200px;
+  height: 50px;
+}
+
+.nextButton:hover {
+  background-color: rgb(138, 138, 138);
+  color: whitesmoke;
+}
+
+.invalidButton {
+  background-color: white;
+  box-shadow: 2px 2px 3px black;
+  color: #000;
+  width: 200px;
+  height: 50px;
+  opacity: 0.3;
+}
+.invalidButton:hover {
+  cursor: default;
+}
+
+.Electric {
+  background-color: #F9D635;
+}
+
+.Fire {
+  background-color: #F18A3C;
+}
+
+.Bug {
+  background-color: #92F1BE;
+}
+
+.Poison {
+  background-color: #F5C5D9
+}
+
+.Psychic {
+  background-color: #AAD9F7;
+}
+
+.Normal {
+  background-color: #C0C3C8;
+}
+
+.Dragon {
+  background-color: #9D61B1;
 }
