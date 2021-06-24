@@ -5,15 +5,87 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: antiquewhite;
 }
 
 .pokemon {
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 300px;
   min-width: 25%;
-  margin: auto auto 20px;
+  margin: auto;
   border: 1px gray solid;
   border-radius: 10px;
+}
+
+.button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: large;
+  border: none;
+  background-color: darkgoldenrod;
+  border-radius: 4px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.typeButtonContainer {
+  margin: auto;
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nextButton {
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 3px black;
+  color: #000;
+}
+
+.nextButton:hover {
+  background-color: rgb(80, 76, 76);
+  color: whitesmoke;
+}
+
+.invalidButton {
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 3px black;
+  color: #000;
+  opacity: 0.5;
+}
+.invalidButton:hover {
+  cursor: default;
+}
+
+.Electric {
+  background-color: #F9D635;
+}
+
+.Fire {
+  background-color: red;
+}
+
+.Bug {
+  background-color: green;
+}
+
+.Poison {
+  background-color: blueviolet;
+}
+
+.Psychic {
+  background-color: blue;
+}
+
+.Normal {
+  background-color: gray;
+}
+
+.Dragon {
+  background-color: #67342D;
 }
