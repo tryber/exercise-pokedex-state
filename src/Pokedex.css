@@ -1,0 +1,76 @@
+@font-face {
+  font-family: gameBoy;
+  src: url(./assets/Early\ GameBoy.ttf);
+}
+
+* {
+  font-family: gameBoy;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+}
+
+.nextBtn {
+  display: flex;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background-color: #ff1f1f;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.nextBtn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.typeBtn {
+  font-size: 12px;
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.typeBtn:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px gray;
+}
+
+.typeBtn:nth-of-type(1) {
+  background-color: #fbd743;
+}
+
+.typeBtn:nth-of-type(2) {
+  background-color: #e35923;
+}
+
+.typeBtn:nth-of-type(3) {
+  background-color: #5a8c4b;
+}
+
+.typeBtn:nth-of-type(4) {
+  background-color: #9d49aa;
+}
+
+.typeBtn:nth-of-type(5) {
+  background-color: #d6b300;
+}
+
+.typeBtn:nth-of-type(6) {
+  background-color: #5e94a7;
+}
+
+.typeBtn:nth-of-type(7) {
+  background-color: #b2cfed;
+}
