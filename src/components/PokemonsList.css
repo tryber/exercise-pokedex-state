@@ -1,5 +1,31 @@
-.pokemons-list {
+.pokedex {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  margin: 10px 10px;
+}
+
+.pokedex-buttons-panel {
+  display: flex;
+  flex-direction: row;
+}
+
+.pokedex-button {
+  background-color: green;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.pokedex-button:disabled {
+  background-color: #D0D0D0;
+}
+
+.filter-button {
+  background-color: orange;
+  height: 50px;
+  margin: 10px;
+  width: 80px;
+  border-radius: 10px;
 }
