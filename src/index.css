@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: antiquewhite;
+  background-color: rgb(78, 78, 78);
+}
+
+h1 {
+  color: white;
 }
 
 .pokemon {
@@ -23,10 +27,12 @@ body {
 .button {
   margin-top: 15px;
   padding: 10px 20px;
-  font-size: large;
+  font-size: 110%;
   border: none;
-  background-color: darkgoldenrod;
+  background-color: white;
   border-radius: 4px;
+  width: 100px;
+  color: #000;
 }
 
 .button:hover {
@@ -35,7 +41,7 @@ body {
 
 .typeButtonContainer {
   margin: auto;
-  width: 55%;
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -45,17 +51,23 @@ body {
   background-color: whitesmoke;
   box-shadow: 2px 2px 3px black;
   color: #000;
+  width: 200px;
+  height: 50px;
+  font-size: large;
+  text-transform: uppercase;
 }
 
 .nextButton:hover {
-  background-color: rgb(80, 76, 76);
+  background-color: rgb(138, 138, 138);
   color: whitesmoke;
 }
 
 .invalidButton {
-  background-color: whitesmoke;
+  background-color: white;
   box-shadow: 2px 2px 3px black;
   color: #000;
+  width: 200px;
+  height: 50px;
   opacity: 0.5;
 }
 .invalidButton:hover {
@@ -67,25 +79,25 @@ body {
 }
 
 .Fire {
-  background-color: red;
+  background-color: #F18A3C;
 }
 
 .Bug {
-  background-color: green;
+  background-color: #92F1BE;
 }
 
 .Poison {
-  background-color: blueviolet;
+  background-color: #F5C5D9
 }
 
 .Psychic {
-  background-color: blue;
+  background-color: #AAD9F7;
 }
 
 .Normal {
-  background-color: gray;
+  background-color: #C0C3C8;
 }
 
 .Dragon {
-  background-color: #67342D;
+  background-color: #9D61B1;
 }
