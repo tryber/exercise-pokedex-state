@@ -1,0 +1,16 @@
+.pokedex {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.btn-types-container {
+  display: flex;
+
+}
+
+.btn-next-poke-container {
+  display: flex;
+
+}
