@@ -1,35 +1,63 @@
 import React from 'react';
 import Pokemon from './Pokemon';
+import Button from './Button';
 
 class Pokedex extends React.Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 		this.state = {
 			pokemonIndex: 0,
-			// filteredType: 'all',
+			filteredType: 'all',
 		};
 		this.nextButton = this.nextButton.bind(this);
+		this.filterPokemon = this.filterPokemon.bind(this);
 	}
 
-	// filterPokemons(filteredType) {
-	// 	this.setState({
+	nextButton({ length }) {
+		this.setState((state) => {
+			const { pokemonIndex } = this.state;
+			if (pokemonIndex === length -1) {
+				return ({ pokemonIndex: 0 })
+			}
+			return ({ pokemonIndex: state.pokemonIndex + 1 });
+		}
+		);
+	}
 
-	// 	})
-	// }
+	filterPokemon(type) {
+		this.setState({ filteredType: type })
+	}
 	
-	nextButton(numberOfPokemons) {
-		this.setState(state => ({
-			pokemonIndex: (state.pokemonIndex + 1) % numberOfPokemons,
-		}));
-	}
 
 	render() {
+		const { pokemons, types } = this.props; 
+		const { pokemonIndex, filteredType } = this.state;
+		const filteredPokemons = pokemons.filter((pokemon) => this.filteredType === 'all' || pokemon.type.includes(filteredType));
+		console.log(filteredType);
+
 		return (
 				<div className="pokedex">
-					<button onClick={this.nextButton} disabled={ this.props.pokemons.length <= 1 }>Próximo Pokemon</button>
-						{/* {this.props.pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)} */}
-						{/* <Pokemon key={this.props.pokemons[0].id} pokemon={this.props.pokemons[0]} /> */}
-						{/* {this.props.pokemons.forEach(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)} */}
+					<Pokemon key={ filteredPokemons[pokemonIndex].id } pokemon={ filteredPokemons[pokemonIndex] } />
+
+					<section>
+						{types.map((type) => <Button 
+							key={type}
+							btnText={type}
+							onClick={() => this.filterPokemon(type)} /> 
+						)}
+						<Button 
+							btnText="all" 
+							onClick={() => this.filterPokemon("all")}
+							/>  
+					</section>
+
+					<section>
+						<Button 
+							btnText="Next Pokemon"
+							onclick={()=> this.nextButton(filteredPokemons)}
+							desabled={filteredPokemons.length <= 1} />
+					</section>
+
 				</div>
 		);
 	}
